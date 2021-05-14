@@ -32,13 +32,14 @@ startButton.addEventListener('click', handleStartGame);
 // -------------------- Function Declarations
 
 // when function runs, the timer will start and the divs will fill with colors
+// handle start game function triggers two other functions
 function handleStartGame() {
     // console.log('Start Game clicked...!');
 
-    // Start Timer
+    // Start Timer (function one)
     startTimer();
 
-    // Create Squares
+    // Create Squares (function two)
     createSquares(squareCount);
 }
 // pull timer out of start game for readability
@@ -47,6 +48,7 @@ function handleStartGame() {
 function startTimer() {
     
     // grab time and save it as a timer
+    // Set interval gives an interval id needed to stop the timer
     const timer = setInterval(function () {
         if (time > 0) {
             time--;
@@ -58,18 +60,17 @@ function startTimer() {
     }, 1000);
 }
 
+// PSEUDOCODE: CREATE SQUARES FUNCTION
 // How many squares?
 // Create div element for each square
-// Colors array of red bnlue green purple
+// Colors array for color options
 // Random index to get random color
 // Apply random color to the div as background-color
 // Append the square to parent '.squares' element
 function createSquares(numberOfSquares) {
-    // console.log('Create Squares running');
-    const colors = ['red', 'purple', 'blue', 'green'];
+    console.log('Create Squares running');
+    // const colors = ['red', 'purple', 'blue', 'green'];
 
-    // const $square = $('</div>')
-    // console.log($square);
     for (let i = 1; i <= numberOfSquares; i++) {
         
         const square = document.createElement('div');

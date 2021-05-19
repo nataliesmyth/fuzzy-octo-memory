@@ -87,6 +87,10 @@ function getRandomColor() {
     const colors = ['red', 'purple', 'blue', 'green'];
 
     const randomIndex = Math.floor(Math.random() * colors.length);
-    console.log('randomIndex = ', randomIndex);
-    return 'purple';
+    
+    // console.log('randomIndex = ', randomIndex);
+
+    randomColor = colors[randomIndex];
+
+    return colors[randomIndex];
 }

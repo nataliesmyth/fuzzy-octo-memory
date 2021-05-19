@@ -67,17 +67,26 @@ function startTimer() {
 // Random index to get random color
 // Apply random color to the div as background-color
 // Append the square to parent '.squares' element
+
 function createSquares(numberOfSquares) {
     console.log('Create Squares running');
-    // const colors = ['red', 'purple', 'blue', 'green'];
 
     for (let i = 1; i <= numberOfSquares; i++) {
         
+        // create square
         const square = document.createElement('div');
-        square.style.backgroundColor = 'blue'; 
-        // `<div style="background-color: ${colors}"></div>`
+        // add background color
+        square.style.backgroundColor = getRandomColor(); 
         console.log(square)
-        // Append to .squares element
+        // Append to .squares element to the DOM
         squaresContainer.appendChild(square);
     }
+}
+
+function getRandomColor() {
+    const colors = ['red', 'purple', 'blue', 'green'];
+
+    const randomIndex = Math.floor(Math.random() * colors.length);
+    console.log('randomIndex = ', randomIndex);
+    return 'purple';
 }

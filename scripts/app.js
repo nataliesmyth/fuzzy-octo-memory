@@ -16,7 +16,7 @@
 // -------------------- App State
 
 const squareCount = 25;
-let time = 30;
+let time = 3;
 
 // -------------------- Cached DOM elements
 
@@ -32,9 +32,8 @@ startButton.addEventListener('click', handleStartGame);
 // -------------------- Function Declarations
 
 // when function runs, the timer will start and the divs will fill with colors
-// handle start game function triggers two other functions
+// handle start game function triggers two functions: startTimer and createSquares
 function handleStartGame() {
-    // console.log('Start Game clicked...!');
 
     // Start Timer (function one)
     startTimer();
@@ -42,17 +41,16 @@ function handleStartGame() {
     // Create Squares (function two)
     createSquares(squareCount);
 }
-// pull timer out of start game for readability
 
 // TODO: #1 Prevent Multiple Timers
 function startTimer() {
-    
-    // grab time and save it as a timer
     // Set interval gives an interval id needed to stop the timer
+    // grab time and save it as a timer
     const timer = setInterval(function () {
         if (time > 0) {
             time--;
             console.log(time);
+            updateTime();
         } else {
             console.log('Time is up')
             clearInterval(timer);
@@ -60,6 +58,15 @@ function startTimer() {
     }, 1000);
 }
 
+// The timer works, but we need to fix the UI so the timer shows up in the browser
+// We want to update the time element with new time value on each interval
+function updateTime () {
+    document.getElementById('timer').innerText = time;
+
+    // const timer = document.getElementById('timer');
+
+    // timer.innerText = time;
+}
 // PSEUDOCODE: CREATE SQUARES FUNCTION
 // How many squares?
 // Create div element for each square
@@ -90,7 +97,7 @@ function getRandomColor() {
     
     // console.log('randomIndex = ', randomIndex);
 
-    randomColor = colors[randomIndex];
+    const randomColor = colors[randomIndex];
 
-    return colors[randomIndex];
+    return randomColor;
 }

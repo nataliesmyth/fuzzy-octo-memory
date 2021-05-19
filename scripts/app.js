@@ -61,7 +61,7 @@ function startTimer() {
 // The timer works, but we need to fix the UI so the timer shows up in the browser
 // We want to update the time element with new time value on each interval
 function updateTime () {
-    document.getElementById('timer').innerText = time;
+    document.getElementById('timer').innerText = `timer: ${time}`;
 
     // const timer = document.getElementById('timer');
 

@@ -1,18 +1,5 @@
 // console.log('Welcome to Poke-A-Square')
 
-// CODE ORGANIZATION
-
-// Third Party Libraries: moment, underscore, jquery
-// Constants
-// App State
-// Cached DOM Elements
-// Event Listeners
-// Functions
-// steps to start game
-    // select button
-    // save button in variable
-    // add click event listener to button
-
 // -------------------- App State
 
 const squareCount = 25;
@@ -21,15 +8,13 @@ let time = 3;
 // -------------------- Cached DOM elements
 
 const startButton = document.getElementById('startGame');
-// console.log(startButton)
 const squaresContainer = document.querySelector('.squares');
-console.log(squaresContainer)
 
 //  ------------------- Event Listeners
 
 // EVENT DELEGATION
 // We want to listen for a click on squares that arent initially part of the dom
-// When we register event listeners, it's going to register them for whatever is in the DOM, which our squares aren't 
+// When we register event listeners, it's going to register them for whatever is in the DOM, which our squares aren't in yet
 // This happens because we already loaded HTML, so it's in memory, and we don't have any development inside an element with a class of squares, so we get back an empty node
 startButton.addEventListener('click', handleStartGame);
 
@@ -71,19 +56,14 @@ function startTimer() {
 // The timer works, but we need to fix the UI so the timer shows up in the browser
 // We want to update the time element with new time value on each interval
 function updateTime () {
+    // method chaining
     document.getElementById('timer').innerText = `timer: ${time}`;
 
+    // same code without method chaining
     // const timer = document.getElementById('timer');
-
     // timer.innerText = time;
 }
-// PSEUDOCODE: CREATE SQUARES FUNCTION
-// How many squares?
-// Create div element for each square
-// Colors array for color options
-// Random index to get random color
-// Apply random color to the div as background-color
-// Append the square to parent '.squares' element
+
 
 function createSquares(numberOfSquares) {
     console.log('Create Squares running');
@@ -102,9 +82,7 @@ function createSquares(numberOfSquares) {
 
 function getRandomColor() {
     const colors = ['red', 'purple', 'blue', 'green'];
-
     const randomIndex = Math.floor(Math.random() * colors.length);
-    
     // console.log('randomIndex = ', randomIndex);
 
     const randomColor = colors[randomIndex];

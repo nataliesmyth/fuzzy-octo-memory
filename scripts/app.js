@@ -4,6 +4,7 @@
 
 const squareCount = 25;
 let time = 3;
+let score = 0;
 
 // -------------------- Cached DOM elements
 
@@ -59,7 +60,7 @@ function updateTime () {
 
 
 function createSquares(numberOfSquares) {
-    console.log('Create Squares running');
+    // console.log('Create Squares running');
 
     for (let i = 1; i <= numberOfSquares; i++) {        
         // create square
@@ -94,8 +95,32 @@ function handleSquareClick(event) {
     if (event.target.classList.contains('square')) {
         // console.log('square clicked!');
         squaresContainer.removeChild(event.target)
+    squareColor = event.target.style.backgroundColor;
+    
+        // don't forget to check score!
+    checkScore(squareColor);    
     }
 }
 
+
+
+function checkScore(color) {
+    if (color === 'blue') {
+        score++;
+        console.log(`you scored! score = ${score}`);
+        // Update the UI
+        document.querySelector('h1').innerText = `Scoreboard: ${score}`;
+    } else {
+        score--;
+        console.log(`you lost a point! score = ${score}`);
+    }
+    // if color = blue; score = score + 1
+    // else; score = score -1
+}
+
+function updateScoreBoard() {
+    document.querySelector('h1').innerText = `Scoreboard: ${score}`;
+}
+
 // jQuery event delegation
-$('.squares').on('click', '.square', handleSquareClick);
+// $('.squares').on('click', '.square', handleSquareClick);

@@ -1,3 +1,6 @@
+:root {
+    --green-square: #BAF2BB;
+}
 * {
     box-sizing: border-box;
 }

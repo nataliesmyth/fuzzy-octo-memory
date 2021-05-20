@@ -17,22 +17,15 @@ const squaresContainer = document.querySelector('.squares');
 // When we register event listeners, it's going to register them for whatever is in the DOM, which our squares aren't in yet
 // This happens because we already loaded HTML, so it's in memory, and we don't have any development inside an element with a class of squares, so we get back an empty node
 startButton.addEventListener('click', handleStartGame);
-
-const squares = document.querySelector('.squares');
-    console.log(squares);
-squares.addEventListener('click', function () {
-    console.log('click!')
-})
+squaresContainer.addEventListener('click', handleSquareClick);
 
 // -------------------- Function Declarations
 
 // when function runs, the timer will start and the divs will fill with colors
 // handle start game function triggers two functions: startTimer and createSquares
 function handleStartGame() {
-
     // Start Timer (function one)
     startTimer();
-
     // Create Squares (function two)
     createSquares(squareCount);
 }
@@ -68,14 +61,18 @@ function updateTime () {
 function createSquares(numberOfSquares) {
     console.log('Create Squares running');
 
-    for (let i = 1; i <= numberOfSquares; i++) {
-        
+    for (let i = 1; i <= numberOfSquares; i++) {        
         // create square
         const square = document.createElement('div');
         // add background color
         square.style.backgroundColor = getRandomColor(); 
-        console.log(square)
-        // Append to .squares element to the DOM
+        
+        // Add class to the new div (destructive)
+        // square.className = 'square';
+        // better solution is to use the class list: prevents overriding other class
+        square.classList.add('square');
+
+        // Append to .squares element
         squaresContainer.appendChild(square);
     }
 }
@@ -88,4 +85,8 @@ function getRandomColor() {
     const randomColor = colors[randomIndex];
 
     return randomColor;
+}
+
+function handleSquareClick(event) {
+    console.log(event.target.classList.contains('square'));
 }

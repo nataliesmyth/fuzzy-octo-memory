@@ -88,5 +88,14 @@ function getRandomColor() {
 }
 
 function handleSquareClick(event) {
-    console.log(event.target.classList.contains('square'));
+    // event.target is what we click on
+    console.log(event.target)
+    // console.log(event.target.classList.contains('square'));
+    if (event.target.classList.contains('square')) {
+        // console.log('square clicked!');
+        squaresContainer.removeChild(event.target)
+    }
 }
+
+// jQuery event delegation
+$('.squares').on('click', '.square', handleSquareClick);

@@ -32,8 +32,12 @@ console.log(squaresContainer)
 // When we register event listeners, it's going to register them for whatever is in the DOM, which our squares aren't 
 // This happens because we already loaded HTML, so it's in memory, and we don't have any development inside an element with a class of squares, so we get back an empty node
 startButton.addEventListener('click', handleStartGame);
-const squares = document.querySelectorAll('.squares div')
-console.log(squares)
+
+const squares = document.querySelector('.squares');
+    console.log(squares);
+squares.addEventListener('click', function () {
+    console.log('click!')
+})
 
 // -------------------- Function Declarations
 

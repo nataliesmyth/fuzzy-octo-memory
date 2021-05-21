@@ -33,9 +33,10 @@ button {
 }
 
 .squares div {
-    width: 10vh;
-    height: 10vh;
+    width: 20vh;
+    height: 20vh;
     margin: 0.5%;
+    padding: 1%;
     display: inline-block;
     background-color: blue;
 }

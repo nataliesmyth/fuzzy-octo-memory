@@ -2,7 +2,7 @@
 
 // -------------------- App State
 
-const squareCount = 25;
+const squareCount = 16;
 let time = 3;
 let score = 0;
 
@@ -22,7 +22,7 @@ squaresContainer.addEventListener('click', handleSquareClick);
 
 // -------------------- Function Declarations
 
-// when function runs, the timer will start and the divs will fill with colors
+// when function runs, the timer will start and the divs will fill with colors 
 // handle start game function triggers two functions: startTimer and createSquares
 function handleStartGame() {
     // Start Timer (function one)
@@ -79,7 +79,7 @@ function createSquares(numberOfSquares) {
 }
 
 function getRandomColor() {
-    const colors = ['red', 'purple', 'blue', 'green'];
+    const colors = ["#BAF2BB", '#BAF2D8', '#BAD7F2', '#F2BAC9'];
     const randomIndex = Math.floor(Math.random() * colors.length);
     // console.log('randomIndex = ', randomIndex);
 

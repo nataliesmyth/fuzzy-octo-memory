@@ -2,9 +2,9 @@
 
 // -------------------- App State
 
-const squareCount = 16;
-let time = 3;
+let time = 30;
 let score = 0;
+let round = 1;
 
 // -------------------- Cached DOM elements
 
@@ -22,37 +22,59 @@ squaresContainer.addEventListener('click', handleSquareClick);
 
 // -------------------- Function Declarations
 
-// when function runs, the timer will start and the divs will fill with colors 
-// handle start game function triggers two functions: startTimer and createSquares
 function handleStartGame() {
-    // Start Timer (function one)
-    startTimer();
-    // Create Squares (function two)
-    createSquares(squareCount);
+
+    if (round === 1) {
+        createSquares(25);
+        startTimer();
+    } else if (round === 2) {
+        createSquares(50);
+        startTimer();
+    } else if (round === 3) {
+        createSquares(75);
+        startTimer();
+    }
+    // startTimer();
+
+    // createSquares(squareCount);
 }
 
-// TODO: #1 Prevent Multiple Timers
+// TODO: Prevent Multiple Timers
 function startTimer() {
-    // Set interval gives an interval id needed to stop the timer
-    // grab time and save it as a timer
     const timer = setInterval(function () {
-        if (time > 0) {
-            time--;
-            console.log(time);
-            updateTime();
+      if (time > 0) {
+        time--;
+        console.log(time);
+        updateTime();
+      } else {
+        console.log('Time is up');
+        // Stop Timer
+        clearInterval(timer);
+  
+        // Clear squares from DOM
+        squaresContainer.innerHTML = '';
+  
+        if (round < 3) {
+          round++;
+          updateRound();
         } else {
-            console.log('Time is up')
-            clearInterval(timer);
+          alert(`Game Over! Your score is ${score}`);
+          score = 0;
+          round = 1;
+          time = 30;
+          updateRound();
+          updateTime();
+          updateScoreBoard();
         }
+      }
     }, 1000);
-}
+  }
 
 // The timer works, but we need to fix the UI so the timer shows up in the browser
 // We want to update the time element with new time value on each interval
 function updateTime () {
     // method chaining
     document.getElementById('timer').innerText = `timer: ${time}`;
-
     // same code without method chaining
     // const timer = document.getElementById('timer');
     // timer.innerText = time;
@@ -82,7 +104,6 @@ function getRandomColor() {
     const colors = ["#BAF2BB", "#BAF2D8", "#BAD7F2", "#F2BAC9"];
     const randomIndex = Math.floor(Math.random() * colors.length);
     // console.log('randomIndex = ', randomIndex);
-
     const randomColor = colors[randomIndex];
 
     return randomColor;
@@ -103,17 +124,20 @@ function handleSquareClick(event) {
     }
 }
 
-
+function updateRound() {
+    document.getElementById('round').innerText = `round : ${round};`
+}
 
 function checkScore(color) {
     if (color === "rgb(186, 215, 242)") {
         score++;
         console.log(`you scored! score = ${score}`);
         // Update the UI
-        document.querySelector('h1').innerText = `Scoreboard: ${score}`;
+        updateScoreBoard();
     } else {
         score--;
         console.log(`you lost a point! score = ${score}`);
+        updateScoreBoard();
     }
     // if color = blue; score = score + 1
     // else; score = score -1

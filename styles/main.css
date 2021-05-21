@@ -1,6 +1,4 @@
-:root {
-    --green-square: #BAF2BB;
-}
+
 * {
     box-sizing: border-box;
 }
@@ -28,10 +26,16 @@ button {
     margin: 0 auto;
 }
 
+.squares {
+    text-align: center;
+    margin: 1%;
+    padding: 1%;
+}
+
 .squares div {
-    width: 5vh;
-    height: 5vh;
-    margin-right: 1%;
+    width: 10vh;
+    height: 10vh;
+    margin: 0.5%;
     display: inline-block;
     background-color: blue;
 }

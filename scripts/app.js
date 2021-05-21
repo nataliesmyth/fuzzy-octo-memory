@@ -79,7 +79,7 @@ function createSquares(numberOfSquares) {
 }
 
 function getRandomColor() {
-    const colors = ["#BAF2BB", '#BAF2D8', '#BAD7F2', '#F2BAC9'];
+    const colors = ["#BAF2BB", "#BAF2D8", "#BAD7F2", "#F2BAC9"];
     const randomIndex = Math.floor(Math.random() * colors.length);
     // console.log('randomIndex = ', randomIndex);
 
@@ -93,11 +93,12 @@ function handleSquareClick(event) {
     console.log(event.target)
     // console.log(event.target.classList.contains('square'));
     if (event.target.classList.contains('square')) {
-        // console.log('square clicked!');
+        console.log('square clicked!');
         squaresContainer.removeChild(event.target)
     squareColor = event.target.style.backgroundColor;
+    console.log(`this is: ${squareColor}`)
     
-        // don't forget to check score!
+    // don't forget to check score!
     checkScore(squareColor);    
     }
 }
@@ -105,7 +106,7 @@ function handleSquareClick(event) {
 
 
 function checkScore(color) {
-    if (color === 'blue') {
+    if (color === "rgb(186, 215, 242)") {
         score++;
         console.log(`you scored! score = ${score}`);
         // Update the UI

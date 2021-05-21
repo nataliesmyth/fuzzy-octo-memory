@@ -13,11 +13,12 @@ const squaresContainer = document.querySelector('.squares');
 
 //  ------------------- Event Listeners
 
-// EVENT DELEGATION
-// We want to listen for a click on squares that arent initially part of the dom
-// When we register event listeners, it's going to register them for whatever is in the DOM, which our squares aren't in yet
-// This happens because we already loaded HTML, so it's in memory, and we don't have any development inside an element with a class of squares, so we get back an empty node
+
 startButton.addEventListener('click', handleStartGame);
+// Event Delegation
+// Colored squares do not exist on the dom until Begin is clicked.
+// Event listeners are registered when the DOM loads
+// To fix this problem, use event delegation (assigning listener to parent)
 squaresContainer.addEventListener('click', handleSquareClick);
 
 // -------------------- Function Declarations
@@ -35,7 +36,6 @@ function handleStartGame() {
         startTimer();
     }
     // startTimer();
-
     // createSquares(squareCount);
 }
 

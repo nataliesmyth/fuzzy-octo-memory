@@ -1,5 +1,14 @@
 // console.log('Welcome to Poke-A-Square')
 
+// -------------------- Modals
+
+var myModal = document.getElementById('myModal')
+var myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', function () {
+  myInput.focus()
+})
+
 // -------------------- App State
 
 let time = 10;

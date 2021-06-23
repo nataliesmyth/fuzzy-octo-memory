@@ -80,8 +80,8 @@ function updateTime () {
     // method chaining
     document.getElementById('timer').innerText = `timer: ${time}`;
     // same code without method chaining
-    // const timer = document.getElementById('timer');
-    // timer.innerText = time;
+        // const timer = document.getElementById('timer');
+        // timer.innerText = time;
 }
 
 

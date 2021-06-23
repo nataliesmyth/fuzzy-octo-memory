@@ -2,7 +2,7 @@
 
 // -------------------- App State
 
-let time = 30;
+let time = 10;
 let score = 0;
 let round = 1;
 
@@ -65,7 +65,7 @@ function startTimer() {
           alert(`Game Over! Your score is ${score}`);
           score = 0;
           round = 1;
-          time = 30;
+          time = 10;
           updateRound();
           updateTime();
           updateScoreBoard();

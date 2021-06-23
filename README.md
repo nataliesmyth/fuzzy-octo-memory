@@ -49,8 +49,6 @@ Project is: _in progress_
 
 ## Room for Improvement
 
-Include areas you believe need improvement / could be improved. Also add TODOs for future development.
-
 Room for improvement:
 
 * Full game should be visible in the view port, scrolling should not be necessary
@@ -59,6 +57,7 @@ Room for improvement:
 To do:
 
 * Prevent multiple timers
+* Have a round end when
 * Keep track of users scores
 
 ## Acknowledgements

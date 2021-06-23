@@ -6,6 +6,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     padding: 0;
     margin: 0;
+    background-color: #f1fcf8;
 }
 
 
@@ -20,16 +21,18 @@ header {
 
 .squares {
     text-align: center;
-    margin: 1%;
-    padding: 1%;
+    /* margin: 1%; */
+    /* padding: 1%; */
     
 }
 
 .squares div {
-    width: 10vh;
-    height: 10vh;
-    margin: 0.5%;
+    margin: 1.75%;
     padding: 1%;
     display: inline-block;
+    height: 4em;
+    width: 4em;
+    /* box-shadow: 0.25em 0.25em 0px 0px grey; */
+    border: .25em black solid;
     /* background-color: blue; */
 }

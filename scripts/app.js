@@ -2,7 +2,7 @@
 
 // -------------------- App State
 
-let time = 10;
+let time = 300;
 let score = 0;
 let round = 1;
 
@@ -28,7 +28,7 @@ squaresContainer.addEventListener('click', handleSquareClick);
 function handleStartGame() {
 
     if (round === 1) {
-        createSquares(25);
+        createSquares(64);
         startTimer();
     } else if (round === 2) {
         time = 15;

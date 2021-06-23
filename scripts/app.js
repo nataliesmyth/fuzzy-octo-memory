@@ -15,10 +15,12 @@ const squaresContainer = document.querySelector('.squares');
 
 
 startButton.addEventListener('click', handleStartGame);
-// Event Delegation
-// Colored squares do not exist on the dom until Begin is clicked.
-// Event listeners are registered when the DOM loads
-// To fix this problem, use event delegation (assigning listener to parent)
+
+
+/************* Event Delegation *************/
+    // Colored squares do not exist on the dom until Begin is clicked.
+    // Event listeners are registered when the DOM loads
+    // To fix this problem, use event delegation (assigning listener to parent)
 squaresContainer.addEventListener('click', handleSquareClick);
 
 // -------------------- Function Declarations
@@ -149,5 +151,5 @@ function updateScoreBoard() {
     document.querySelector('h1').innerText = `Scoreboard: ${score}`;
 }
 
-// jQuery event delegation
 // $('.squares').on('click', '.square', handleSquareClick);
+// jQuery event delegation

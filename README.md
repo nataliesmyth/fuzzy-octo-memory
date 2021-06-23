@@ -70,7 +70,7 @@ Give credit here.
 
 ## Contact
 
-Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
+Created by [Natalie Smyth](https://www.nataliesmyth.com/) - feel free to contact me!
 
 <!-- Optional -->
 <!-- ## License -->

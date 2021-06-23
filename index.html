@@ -3,16 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="styles/main.css">
+
   <!-- jQuery -->
   <script defer src="scripts/jquery-3-6-0.js"></script>
   <!-- Main JS -->
   <script defer src="scripts/app.js"></script>
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="styles/main.css">
   <title>Poke-A-Square</title>
 </head>
+
+
 <body>
     <header>
         <h1>Score: 0</h1>
@@ -21,6 +27,9 @@
          <button id="startGame">Begin</button>
     </header>
 
-    <section class="squares"></section>
+    <div class="container">
+      <section class="squares shadow-lg p-3 mb-5 bg-body rounded"></section>
+    </div>
+
 </body>
 </html>

@@ -29,9 +29,11 @@ function handleStartGame() {
         createSquares(25);
         startTimer();
     } else if (round === 2) {
+        time = 15;
         createSquares(50);
         startTimer();
     } else if (round === 3) {
+        time = 7;
         createSquares(75);
         startTimer();
     }

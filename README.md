@@ -1,12 +1,14 @@
-# POKE A SQUARE
-__________________
-A game where the user has to find all the blue squares in 30 seconds.
+# Blue Deamons
 
-## OBJECTIVE
+click as many blue squares, I mean deamons, before time runs out! Can you beat all three rounds?
 
--click as many blue squares as possible during the alloted time
+## Table of Contents
 
-## GAME LOGIC
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Setup](#setup)
+
+## General Info
 
 1.When user clicks begin, timer starts and random colored squares populate the screen
 
@@ -28,6 +30,24 @@ A game where the user has to find all the blue squares in 30 seconds.
 -what ends a round? When time = 0 OR all blue squares are clicked
 -how many rounds? 3
 
+## Technologies
+
+This project is created with:
+
+* jQuery version: 3.6.0
+* Ipsum version: 2.33
+* Ament library version: 999
+
+## Setup
+
+To run this project, install it locally using npm:
+
+```bash
+
+cd ../lorem
+npm install
+npm start
+```
 // CODE ORGANIZATION
 
 // Third Party Libraries: moment, underscore, jquery
@@ -48,3 +68,4 @@ A game where the user has to find all the blue squares in 30 seconds.
 // Random index to get random color
 // Apply random color to the div as background-color
 // Append the square to parent '.squares' element
+

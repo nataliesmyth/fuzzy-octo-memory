@@ -21,13 +21,13 @@ header {
 
 .squares {
     text-align: center;
-    /* margin: 1%; */
+    margin: 5em;
     /* padding: 1%; */
     
 }
 
 .squares div {
-    margin: 1.75%;
+    margin: 0.75%;
     padding: 1%;
     display: inline-block;
     height: 4em;

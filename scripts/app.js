@@ -109,9 +109,18 @@ function getRandomColor() {
     const randomIndex = Math.floor(Math.random() * colors.length);
     // console.log('randomIndex = ', randomIndex);
     const randomColor = colors[randomIndex];
-
+    // console.log(randomColor)
     return randomColor;
 }
+
+// function trackRandomColor() {
+//     let blueSquareCount = 0;
+//     for(let i = 0; i <= randomColor.length; i++) {
+//         if (i === '#BAF2BB')
+//         blueSquareCount ++
+//     }
+//     console.log('this is the blue square count ', blueSquareCount)
+// }
 
 function handleSquareClick(event) {
     // event.target is what we click on

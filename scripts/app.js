@@ -105,7 +105,7 @@ function createSquares(numberOfSquares) {
 }
 
 function getRandomColor() {
-    const colors = ["#BAF2BB", "#BAF2D8", "#BAD7F2", "#F2BAC9"];
+    const colors = ["#E76F51", "#6096BA", "#849A47", "#762D75"];
     const randomIndex = Math.floor(Math.random() * colors.length);
     // console.log('randomIndex = ', randomIndex);
     const randomColor = colors[randomIndex];

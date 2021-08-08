@@ -2,7 +2,7 @@
 
 // -------------------- App State
 
-let time = 300;
+let time = 30;
 let score = 0;
 let round = 1;
 
@@ -28,15 +28,15 @@ squaresContainer.addEventListener('click', handleSquareClick);
 function handleStartGame() {
 
     if (round === 1) {
-        createSquares(100);
+        createSquares(64);
         startTimer();
     } else if (round === 2) {
         time = 15;
-        createSquares(100);
+        createSquares(50);
         startTimer();
     } else if (round === 3) {
         time = 7;
-        createSquares(150);
+        createSquares(75);
         startTimer();
     }
     // startTimer();
@@ -48,7 +48,7 @@ function startTimer() {
     const timer = setInterval(function () {
       if (time > 0) {
         time--;
-        // console.log(time);
+        console.log(time);
         updateTime();
       } else {
         console.log('Time is up');
@@ -105,23 +105,22 @@ function createSquares(numberOfSquares) {
 }
 
 function getRandomColor() {
-    const colors = ["#E76F51", "rgb(96, 150, 186", "#849A47", "#762D75"];
+    const colors = ["red", "blue", "green", "purple"];
     const randomIndex = Math.floor(Math.random() * colors.length);
     // console.log('randomIndex = ', randomIndex);
     const randomColor = colors[randomIndex];
     // console.log(randomColor)
     return randomColor;
-}
+} 
 
-function trackRandomColor() {
-    let blueSquareCount = 0;
-    for(let i = 0; i <= randomColor.length; i++) {
-        if (i === 'rgb(96, 150, 186')
-        blueSquareCount ++
-
-        console.log('this is the blue square count ', blueSquareCount)
-    }
-}
+// function trackRandomColor() {
+//     let blueSquareCount = 0;
+//     for(let i = 0; i <= randomColor.length; i++) {
+//         if (i === 'blue')
+//         blueSquareCount ++
+//     }
+//     console.log('this is the blue square count ', blueSquareCount)
+// }
 
 function handleSquareClick(event) {
     // event.target is what we click on
@@ -134,17 +133,16 @@ function handleSquareClick(event) {
     console.log(`this is: ${squareColor}`)
     
     // don't forget to check score!
-    checkScore(squareColor);
-    console.log(checkScore(squareColor))
+    checkScore(squareColor);    
     }
 }
 
 function updateRound() {
     document.getElementById('round').innerText = `round : ${round};`
-}
+} 
 
 function checkScore(color) {
-    if (color === "rgb(96, 150, 186") {
+    if (color === "blue") {
         score++;
         console.log(`you scored! score = ${score}`);
         // Update the UI

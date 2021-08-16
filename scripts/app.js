@@ -2,7 +2,7 @@
 
 // -------------------- App State
 
-let time = 30;
+let time = 3;
 let score = 0;
 let round = 1;
 
@@ -26,7 +26,7 @@ squaresContainer.addEventListener('click', handleSquareClick);
 // -------------------- Function Declarations
 
 function handleStartGame() {
-
+    
     if (round === 1) {
         createSquares(64);
         startTimer();
@@ -41,6 +41,7 @@ function handleStartGame() {
     }
     // startTimer();
     // createSquares(squareCount);
+    document.getElementById('startGame').style.display = 'none';
 }
 
 // TODO: Prevent Multiple Timers
@@ -58,14 +59,14 @@ function startTimer() {
         // Clear squares from DOM
         squaresContainer.innerHTML = '';
   
-        if (round < 3) {
+        if ((round < 3) && (score > 0)) {
           round++;
           updateRound();
         } else {
           alert(`Game Over! Your score is ${score}`);
           score = 0;
           round = 1;
-          time = 10;
+          time = 3;
           updateRound();
           updateTime();
           updateScoreBoard();
@@ -139,6 +140,7 @@ function handleSquareClick(event) {
 
 function updateRound() {
     document.getElementById('round').innerText = `round : ${round};`
+    document.getElementById('startGame').style.display = 'inline';
 } 
 
 function checkScore(color) {

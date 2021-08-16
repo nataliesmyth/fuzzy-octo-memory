@@ -149,7 +149,7 @@ function checkScore(color) {
         console.log(`you scored! score = ${score}`);
         // Update the UI
         updateScoreBoard();
-    } else {
+    } else if ((color != "blue") && (score > 0)) {
         score--;
         console.log(`you lost a point! score = ${score}`);
         updateScoreBoard();

@@ -2,7 +2,7 @@
 
 // -------------------- App State
 
-let time = 3;
+let time = 30;
 let score = 0;
 let round = 1;
 
@@ -36,7 +36,7 @@ function handleStartGame() {
         startTimer();
     } else if (round === 3) {
         time = 7;
-        createSquares(75);
+        createSquares(40);
         startTimer();
     }
     // startTimer();

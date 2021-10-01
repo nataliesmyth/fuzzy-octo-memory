@@ -10,7 +10,9 @@ let round = 1;
 
 const startButton = document.getElementById('startGame');
 const squaresContainer = document.querySelector('.squares');
+const gameBoard = document.getElementById('game-board');
 
+gameBoard.style.display = "none";
 //  ------------------- Event Listeners
 
 
@@ -28,6 +30,7 @@ squaresContainer.addEventListener('click', handleSquareClick);
 function handleStartGame() {
     
     if (round === 1) {
+        gameBoard.style.display = "block";
         createSquares(64);
         startTimer();
     } else if (round === 2) {

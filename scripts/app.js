@@ -36,7 +36,7 @@ function handleStartGame() {
         startTimer();
     } else if (round === 3) {
         time = 7;
-        createSquares(75);
+        createSquares(40);
         startTimer();
     }
     // startTimer();

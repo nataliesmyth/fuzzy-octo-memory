@@ -78,7 +78,7 @@ function startTimer() {
     }, 1000);
   }
 
-// The timer works, but we need to fix the UI so the timer shows up in the browser
+
 // We want to update the time element with new time value on each interval
 function updateTime () {
     // method chaining
@@ -131,7 +131,7 @@ function handleSquareClick(event) {
     console.log(event.target)
     // console.log(event.target.classList.contains('square'));
     if (event.target.classList.contains('square')) {
-        console.log('square clicked!');
+        // console.log('square clicked!');
         squaresContainer.removeChild(event.target)
     squareColor = event.target.style.backgroundColor;
     console.log(`this is: ${squareColor}`)
@@ -152,7 +152,7 @@ function checkScore(color) {
         console.log(`you scored! score = ${score}`);
         // Update the UI
         updateScoreBoard();
-    } else if ((color != "blue") && (score > 0)) {
+    } else if ((color != "blue") && (score >= 0)) {
         score--;
         console.log(`you lost a point! score = ${score}`);
         updateScoreBoard();

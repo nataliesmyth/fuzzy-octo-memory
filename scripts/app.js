@@ -34,10 +34,12 @@ function handleStartGame() {
         createSquares(64);
         startTimer();
     } else if (round === 2) {
+        gameBoard.style.display = "block";
         time = 15;
         createSquares(50);
         startTimer();
     } else if (round === 3) {
+        gameBoard.style.display = "block";
         time = 7;
         createSquares(40);
         startTimer();
@@ -61,6 +63,7 @@ function startTimer() {
   
         // Clear squares from DOM
         squaresContainer.innerHTML = '';
+        gameBoard.style.display = "none";
   
         if ((round < 3) && (score > 0)) {
           round++;

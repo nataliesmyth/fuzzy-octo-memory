@@ -9,8 +9,6 @@ body {
     background-color: #f1fcf8;
 }
 
-
-
 header {
     width: 100%;
     display: block;
@@ -21,7 +19,8 @@ header {
 
 .squares {
     text-align: center;
-    margin: 5em;
+    /* margin: 5em; */
+    /* height: 100vh; */
     /* padding: 1%; */
     
 }
@@ -30,8 +29,8 @@ header {
     margin: 0.75%;
     padding: 1%;
     display: inline-block;
-    height: 4em;
-    width: 4em;
+    height: 3em;
+    width: 3em;
     /* box-shadow: 0.25em 0.25em 0px 0px grey; */
     border: .25em black solid;
     background-color: rgb(96, 150, 186);

@@ -72,7 +72,7 @@ function startTimer() {
           alert(`Game Over! Your score is ${score}`);
           score = 0;
           round = 1;
-          time = 3;
+          time = 30;
           updateRound();
           updateTime();
           updateScoreBoard();

@@ -46,12 +46,11 @@ function handleStartGame() {
     document.getElementById('startGame').style.display = 'none';
 }
 
-// TODO: Prevent Multiple Timers
 function startTimer() {
     const timer = setInterval(function () {
       if (time > 0) {
         time--;
-        console.log(time);
+        // console.log(time);
         updateTime();
       } else {
         console.log('Time is up');
@@ -115,8 +114,8 @@ function getRandomColor() {
     const randomColor = colors[randomIndex];
     // console.log(randomColor)
     return randomColor;
+    trackRandomColor()
 } 
-
 // function trackRandomColor() {
 //     let blueSquareCount = 0;
 //     for(let i = 0; i <= randomColor.length; i++) {
@@ -126,17 +125,18 @@ function getRandomColor() {
 //     console.log('this is the blue square count ', blueSquareCount)
 // }
 
+
 function handleSquareClick(event) {
     // event.target is what we click on
-    console.log(event.target)
+    // console.log(event.target)
     // console.log(event.target.classList.contains('square'));
     if (event.target.classList.contains('square')) {
         // console.log('square clicked!');
         squaresContainer.removeChild(event.target)
     squareColor = event.target.style.backgroundColor;
-    console.log(`this is: ${squareColor}`)
+    // console.log(`this is: ${squareColor}`)
     
-    // don't forget to check score!
+    
     checkScore(squareColor);    
     }
 }

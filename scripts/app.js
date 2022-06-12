@@ -28,18 +28,15 @@ squaresContainer.addEventListener('click', handleSquareClick);
 // -------------------- Function Declarations
 
 function handleStartGame() {
-    
+    gameBoard.style.display = "block";
     if (round === 1) {
-        gameBoard.style.display = "block";
         createSquares(64);
         startTimer();
     } else if (round === 2) {
-        gameBoard.style.display = "block";
         time = 15;
         createSquares(50);
         startTimer();
     } else if (round === 3) {
-        gameBoard.style.display = "block";
         time = 7;
         createSquares(40);
         startTimer();

@@ -7,6 +7,11 @@ body {
     padding: 0;
     margin: 0;
     background-color: #f1fcf8;
+    display: flex;
+}
+
+.game-container {
+    margin: auto;
 }
 
 header {
@@ -18,7 +23,7 @@ header {
 }
 
 .squares {
-    text-align: center;
+    /* text-align: center; */
     /* margin: 5em; */
     /* height: 100vh; */
     /* padding: 1%; */

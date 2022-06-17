@@ -13,6 +13,7 @@ const squaresContainer = document.querySelector('.squares');
 const gameBoard = document.getElementById('game-board');
 const enterGame = document.getElementById('main');
 const enterButton = document.getElementById('enter-btn')
+const enterMessage = document.getElementById('enter-message');
 
 //  ------------------- Event Listeners
 
@@ -35,6 +36,7 @@ squaresContainer.addEventListener('click', handleSquareClick);
 function handleShowGame() {
     enterGame.style.display = "block";
     enterButton.style.display = "none";
+    enterMessage.style.display = "none";
 }
 
 function handleStartGame() {

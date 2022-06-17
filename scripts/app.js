@@ -11,9 +11,12 @@ let round = 1;
 const startButton = document.getElementById('startGame');
 const squaresContainer = document.querySelector('.squares');
 const gameBoard = document.getElementById('game-board');
+const enterGame = document.getElementById('main');
+const enterButton = document.getElementById('enter-btn')
 
 //  ------------------- Event Listeners
 
+enterGame.style.display = "none";
 gameBoard.style.display = "none";
 
 startButton.addEventListener('click', handleStartGame);
@@ -23,9 +26,16 @@ startButton.addEventListener('click', handleStartGame);
     // Colored squares do not exist on the dom until Begin is clicked.
     // Event listeners are registered when the DOM loads
     // To fix this problem, use event delegation (assigning listener to parent)
+
+enterButton.addEventListener('click', handleShowGame);
 squaresContainer.addEventListener('click', handleSquareClick);
 
 // -------------------- Function Declarations
+
+function handleShowGame() {
+    enterGame.style.display = "block";
+    enterButton.style.display = "none";
+}
 
 function handleStartGame() {
     gameBoard.style.display = "block";

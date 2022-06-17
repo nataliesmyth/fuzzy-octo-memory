@@ -41,6 +41,13 @@ header {
     background-color: rgb(96, 150, 186);
 }
 
+.modal-btn {
+    text-align: center;
+}
+
+/* .welcome-container {
+    display: none;
+} */
 .modal {
   display: none;
   position: fixed; 

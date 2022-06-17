@@ -1,21 +1,5 @@
 // console.log('Welcome to Poke-A-Square')
 
-// -------------------- Modal
-let modalBtn = document.getElementById("modal-btn")
-let modal = document.querySelector(".modal")
-let closeBtn = document.querySelector(".close-btn")
-modalBtn.onclick = function(){
-  modal.style.display = "block"
-}
-closeBtn.onclick = function(){
-  modal.style.display = "none"
-}
-window.onclick = function(e){
-  if(e.target == modal){
-    modal.style.display = "none"
-  }
-}
-
 // -------------------- App State
 
 let time = 30;
@@ -28,9 +12,9 @@ const startButton = document.getElementById('startGame');
 const squaresContainer = document.querySelector('.squares');
 const gameBoard = document.getElementById('game-board');
 
-gameBoard.style.display = "none";
 //  ------------------- Event Listeners
 
+gameBoard.style.display = "none";
 
 startButton.addEventListener('click', handleStartGame);
 

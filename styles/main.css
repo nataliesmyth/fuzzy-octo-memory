@@ -11,10 +11,15 @@ body {
     font-size: 16px;
 }
 
-#enter-message {
+.enter-message {
+  background-color: #fff;
   margin: 2em auto;
+  padding: 2em;
   text-align: center;
+  border: 10px #000 solid;
+  border-radius: 1em;
 }
+
 .game-container {
     margin: 2em;
 }

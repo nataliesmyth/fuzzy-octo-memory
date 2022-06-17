@@ -8,8 +8,13 @@ body {
     margin: 0;
     background-color: #f1fcf8;
     display: flex;
+    font-size: 16px;
 }
 
+#enter-message {
+  margin: 2em auto;
+  text-align: center;
+}
 .game-container {
     margin: 2em;
 }
@@ -41,13 +46,6 @@ header {
     background-color: rgb(96, 150, 186);
 }
 
-.modal-btn {
-    text-align: center;
-}
-
-/* .welcome-container {
-    display: none;
-} */
 .modal {
   display: none;
   position: fixed; 

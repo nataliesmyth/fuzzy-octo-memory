@@ -15,7 +15,7 @@ main {
   margin: 0 auto;
 }
 
-.enter-btn {
+button {
   padding: .5em;
   border-radius: .25em;
 }

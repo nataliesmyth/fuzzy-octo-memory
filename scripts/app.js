@@ -146,7 +146,7 @@ function handleSquareClick(event) {
         // console.log('square clicked!');
         squaresContainer.removeChild(event.target)
     squareColor = event.target.style.backgroundColor;
-    // console.log(`this is: ${squareColor}`)
+    console.log(`this is: ${squareColor}`)
     
     
     checkScore(squareColor);    

@@ -5,10 +5,10 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Odibee Sans', cursive, sans-serif;
     background-color: #f1fcf8;
     display: flex;
-    font-size: 16px;
+    font-size: 32px;
 }
 
 main {
@@ -16,8 +16,10 @@ main {
 }
 
 .enter-btn {
-  border-radius: 1em;
+  padding: .5em;
+  border-radius: .25em;
 }
+
 .enter-message {
   background-color: #fff;
   margin: 2em auto;
@@ -25,10 +27,6 @@ main {
   text-align: center;
   border: 10px #000 solid;
   border-radius: 1em;
-}
-
-.enter-message.enter-button {
-  font-size: 2em;
 }
 
 .game-container {

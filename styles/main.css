@@ -1,11 +1,11 @@
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
-    padding: 0;
-    margin: 0;
     background-color: #f1fcf8;
     display: flex;
     font-size: 16px;
@@ -15,6 +15,9 @@ main {
   margin: 0 auto;
 }
 
+.enter-btn {
+  border-radius: 1em;
+}
 .enter-message {
   background-color: #fff;
   margin: 2em auto;

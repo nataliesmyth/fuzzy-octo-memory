@@ -5,6 +5,7 @@
 let time = 30;
 let score = 0;
 let round = 1;
+let blueSquares = 0
 
 // -------------------- Cached DOM elements
 
@@ -64,7 +65,11 @@ function startTimer() {
         time--;
         // console.log(time);
         updateTime();
-      } else {
+        console.log(blueSquares)
+      } else if (blueSquares === score) {
+        console.log('You won the round!')
+      }
+      else {
         console.log('Time is up');
         // Stop Timer
         clearInterval(timer);
@@ -108,7 +113,10 @@ function createSquares(numberOfSquares) {
         const square = document.createElement('div');
         // add background color
         square.style.backgroundColor = getRandomColor(); 
-        
+        console.log(square.style.backgroundColor)
+        if (square.style.backgroundColor === "blue")
+            blueSquares ++
+        console.log(blueSquares)
         // Add class to the new div (destructive)
         // square.className = 'square';
         // better solution is to use the class list: prevents overriding other class
@@ -116,6 +124,7 @@ function createSquares(numberOfSquares) {
 
         // Append to .squares element
         squaresContainer.appendChild(square);
+        console.log(square.classList)
     }
 }
 
@@ -123,19 +132,24 @@ function getRandomColor() {
     const colors = ["red", "blue", "green", "purple"];
     const randomIndex = Math.floor(Math.random() * colors.length);
     // console.log('randomIndex = ', randomIndex);
+
     const randomColor = colors[randomIndex];
+    
     // console.log(randomColor)
     return randomColor;
     trackRandomColor()
-} 
-// function trackRandomColor() {
-//     let blueSquareCount = 0;
-//     for(let i = 0; i <= randomColor.length; i++) {
-//         if (i === 'blue')
-//         blueSquareCount ++
-//     }
-//     console.log('this is the blue square count ', blueSquareCount)
-// }
+}
+
+
+
+function trackRandomColor() {
+    let blueSquareCount = 0;
+    for(let i = 0; i <= randomColor.length; i++) {
+        if (i === 'blue')
+        blueSquareCount ++
+    }
+    console.log('this is the blue square count ', blueSquareCount)
+}
 
 
 function handleSquareClick(event) {

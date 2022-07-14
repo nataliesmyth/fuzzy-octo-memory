@@ -65,10 +65,10 @@ function startTimer() {
         time--;
         // console.log(time);
         updateTime();
-        console.log(blueSquares)
-      } else if (blueSquares === score) {
-        console.log('You won the round!')
-      }
+        // console.log(blueSquares)
+      } // if (blueSquares === score) {
+    //     console.log('You won the round!')
+    //   }
       else {
         console.log('Time is up');
         // Stop Timer
@@ -125,6 +125,7 @@ function createSquares(numberOfSquares) {
         // Append to .squares element
         squaresContainer.appendChild(square);
         console.log(square.classList)
+        console.log(score)
     }
 }
 
@@ -175,6 +176,8 @@ function updateRound() {
 function checkScore(color) {
     if (color === "blue") {
         score++;
+        blueSquares--;
+        console.log(blueSquares);
         console.log(`you scored! score = ${score}`);
         // Update the UI
         updateScoreBoard();
@@ -182,6 +185,12 @@ function checkScore(color) {
         score--;
         console.log(`you lost a point! score = ${score}`);
         updateScoreBoard();
+    } if (blueSquares === 0) {
+        clearInterval(startTimer)
+        round++
+        updateRound();
+        updateTime()
+        console.log('you won the round!')
     }
     // if color = blue; score = score + 1
     // else; score = score -1

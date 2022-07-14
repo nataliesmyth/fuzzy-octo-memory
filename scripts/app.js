@@ -174,7 +174,7 @@ function checkScore(color) {
 }
 
 function updateScoreBoard() {
-    document.querySelector('h1').innerText = `Scoreboard: ${score}`;
+    document.querySelector('h4').innerText = `Score: ${score}`;
 }
 
 // $('.squares').on('click', '.square', handleSquareClick);

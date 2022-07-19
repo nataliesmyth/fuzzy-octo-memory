@@ -127,7 +127,9 @@ function createSquares(numberOfSquares) {
         // console.log(square.classList)
         // console.log(score)
     }
-    return blueSquares
+    // return blueSquares
+    console.log(blueSquares)
+
 }
 
 trackBlueSquares = createSquares(numberOfSquares);

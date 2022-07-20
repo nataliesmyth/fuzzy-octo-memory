@@ -147,18 +147,6 @@ function getRandomColor() {
 }
 
 
-
-
-// function trackRandomColor() {
-//     let blueSquareCount = 0;
-//     for(let i = 0; i <= randomColor.length; i++) {
-//         if (i === 'blue')
-//         blueSquareCount ++
-//     }
-//     console.log('this is the blue square count ', blueSquareCount)
-// }
-// trackRandomColor();
-
 function handleSquareClick(event) {
     // event.target is what we click on
     // console.log(event.target)

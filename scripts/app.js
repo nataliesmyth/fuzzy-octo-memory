@@ -113,10 +113,10 @@ function createSquares(numberOfSquares) {
         const square = document.createElement('div');
         // add background color
         square.style.backgroundColor = getRandomColor(); 
-        // console.log(square.style.backgroundColor)
+        console.log(square.style.backgroundColor)
         if (square.style.backgroundColor === "blue")
             blueSquares ++
-        // console.log(blueSquares)
+        console.log(blueSquares)
         // Add class to the new div (destructive)
         // square.className = 'square';
         // better solution is to use the class list: prevents overriding other class
@@ -124,16 +124,10 @@ function createSquares(numberOfSquares) {
 
         // Append to .squares element
         squaresContainer.appendChild(square);
-        // console.log(square.classList)
-        // console.log(score)
+        console.log(square.classList)
+        console.log(score)
     }
-    // return blueSquares
-    console.log(blueSquares)
-
 }
-
-trackBlueSquares = createSquares(numberOfSquares);
-console.log(trackBlueSquares)
 
 function getRandomColor() {
     const colors = ["red", "blue", "green", "purple"];
@@ -144,6 +138,18 @@ function getRandomColor() {
     
     // console.log(randomColor)
     return randomColor;
+    trackRandomColor()
+}
+
+
+
+function trackRandomColor() {
+    let blueSquareCount = 0;
+    for(let i = 0; i <= randomColor.length; i++) {
+        if (i === 'blue')
+        blueSquareCount ++
+    }
+    console.log('this is the blue square count ', blueSquareCount)
 }
 
 
@@ -180,10 +186,8 @@ function checkScore(color) {
         console.log(`you lost a point! score = ${score}`);
         updateScoreBoard();
     } if (blueSquares === 0) {
-        clearInterval(startTimer)
         round++
         updateRound();
-        updateTime()
         console.log('you won the round!')
     }
     // if color = blue; score = score + 1

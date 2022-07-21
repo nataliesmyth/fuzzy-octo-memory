@@ -47,11 +47,11 @@ function handleStartGame() {
         startTimer();
     } else if (round === 2) {
         time = 15;
-        createSquares(50);
+        createSquares(96);
         startTimer();
     } else if (round === 3) {
         time = 7;
-        createSquares(40);
+        createSquares(128);
         startTimer();
     }
     // startTimer();

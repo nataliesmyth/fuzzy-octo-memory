@@ -46,11 +46,11 @@ function handleStartGame() {
         createSquares(64);
         startTimer();
     } else if (round === 2) {
-        // time = 30;
+        time = 30;
         createSquares(96);
         startTimer();
     } else if (round === 3) {
-        // time = 30;
+        time = 30;
         createSquares(128);
         startTimer();
     }
@@ -66,9 +66,7 @@ function startTimer() {
         // console.log(time);
         updateTime();
         // console.log(blueSquares)
-      } // if (blueSquares === score) {
-    //     console.log('You won the round!')
-    //   }
+      }
       else {
         console.log('Time is up');
         // Stop Timer
@@ -186,8 +184,9 @@ function checkScore(color) {
         console.log(`you lost a point! score = ${score}`);
         updateScoreBoard();
     } if (blueSquares === 0) {
-        round++
-        updateRound();
+        // round++
+        // updateRound();
+        // startTimer();
         console.log('you won the round!')
     }
     // if color = blue; score = score + 1

@@ -172,7 +172,7 @@ function updateRound() {
 } 
 
 function checkScore(color) {
-    if (color === "blue") {
+    if (color === "blue") { 
         score++;
         blueSquares--;
         console.log(blueSquares);

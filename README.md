@@ -17,8 +17,9 @@ Find and eliminate all the blue squares before time runs out! Can you beat all t
 
 ## User Stories
 
--When user clicks begin, timer starts and squares populate with a random color
--When user click a color, the color disappears and a point is added or subtracted from score
+-When user clicks begin, timer starts and squares populate with either a red, blue, green, or purple square
+-When user click a color, the square disappears
+-If the square is blue, the user gains 1 point, if the square is red, green, or purple, 1 point is subtracted from the score
 -When round is over, the scores, round, and timer update for the user to start again with increased difficulty
 
 ## General Info

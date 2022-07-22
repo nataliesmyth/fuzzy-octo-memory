@@ -196,6 +196,7 @@ function checkScore(color) {
 function updateScoreBoard() {
     document.querySelector('h4').innerText = `Score: ${score}`;
 }
+console.log(updateScoreBoard())
 
 // $('.squares').on('click', '.square', handleSquareClick);
 // jQuery event delegation

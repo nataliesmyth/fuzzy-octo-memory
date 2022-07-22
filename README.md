@@ -19,7 +19,7 @@ Find and eliminate all the blue squares before time runs out! Can you beat all t
 
 -When user clicks begin, timer starts and squares populate with a random color
 -When user click a color, the color disappears and a point is added or subtracted from score
--When round is over, the scores, round, and timer update 
+-When round is over, the scores, round, and timer update for the user to start again with increased difficulty
 
 ## General Info
 

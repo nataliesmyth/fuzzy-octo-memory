@@ -101,6 +101,11 @@ header {
 }
 
 @media screen and (max-width: 390px) {
+  .enter-message {
+    margin: 1em;
+    border: 5px #000 solid;
+  }
+
   .squares div {
     width: 1em;
     height: 1em;

@@ -14,7 +14,7 @@ body {
 main {
   margin: 0 auto;
 }
-
+  
 button {
   padding: .5em;
   border-radius: .25em;
@@ -98,4 +98,11 @@ header {
 @keyframes animatetop {
   from {top:-300px; opacity:0}
   to {top:0; opacity:1}
+}
+
+@media screen and (max-width: 390px) {
+  .squares div {
+    width: 1em;
+    height: 1em;
+  }
 }

@@ -104,5 +104,10 @@ header {
   .squares div {
     width: 1em;
     height: 1em;
+    border: .1em black solid;
+  }
+
+  .game-container {
+    margin: .25em;
   }
 }

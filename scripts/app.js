@@ -44,7 +44,7 @@ function handleStartGame() {
     gameBoard.style.display = "block";
     if (round === 1) {
         createSquares(64);
-        startTimer();
+        // startTimer();
     } else if (round === 2) {
         time = 30;
         createSquares(96);
@@ -64,6 +64,9 @@ function startTimer() {
         if (blueSquares === 0 && time > 0) {
             console.log('You won the round')
             clearInterval(timer)
+            updateTime()
+            // round++
+            updateRound()
           }
       else if (time > 0) {
         time--;

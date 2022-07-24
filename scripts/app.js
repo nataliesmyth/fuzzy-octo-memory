@@ -61,13 +61,16 @@ function handleStartGame() {
 
 function startTimer() {
     const timer = setInterval(function () {
-      if (time > 0) {
+        if (blueSquares === 0 && time > 0) {
+            console.log('You won the round')
+            clearInterval(timer)
+          }
+      else if (time > 0) {
         time--;
         // console.log(time);
         updateTime();
         // console.log(blueSquares)
-      }
-      else {
+      } else {
         console.log('Time is up');
         // Stop Timer
         clearInterval(timer);
@@ -186,10 +189,10 @@ function checkScore(color) {
         console.log(`you lost a point! score = ${score}`);
         updateScoreBoard();
     } if (blueSquares === 0) {
-        // clearInterval(time)
+        startTimer()
+        // updateTime()
         // round++
         // updateRound();
-        // startTimer();
         console.log('you won the round!')
     }
     // if color = blue; score = score + 1

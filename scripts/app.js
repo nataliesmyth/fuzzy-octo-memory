@@ -44,7 +44,7 @@ function handleStartGame() {
     gameBoard.style.display = "block";
     if (round === 1) {
         createSquares(64);
-        // startTimer();
+        startTimer();
     } else if (round === 2) {
         time = 30;
         createSquares(96);
@@ -65,12 +65,12 @@ function startTimer() {
             console.log('You won the round')
             clearInterval(timer)
             updateTime()
-            // round++
+            round++
             updateRound()
           }
       else if (time > 0) {
         time--;
-        // console.log(time);
+        console.log(time);
         updateTime();
         // console.log(blueSquares)
       } else {
@@ -191,13 +191,7 @@ function checkScore(color) {
         score--;
         console.log(`you lost a point! score = ${score}`);
         updateScoreBoard();
-    } if (blueSquares === 0) {
-        startTimer()
-        // updateTime()
-        // round++
-        // updateRound();
-        console.log('you won the round!')
-    }
+    } 
     // if color = blue; score = score + 1
     // else; score = score -1
 }

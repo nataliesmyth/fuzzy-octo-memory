@@ -77,8 +77,10 @@ function startTimer() {
         gameBoard.style.display = "none";
   
         if ((round < 3) && (score > 0)) {
-          round++;
-          updateRound();
+            updateTime()
+            round++;
+            updateRound();
+           
         } else {
           alert(`Game Over! Your score is ${score}`);
           score = 0;
@@ -184,6 +186,7 @@ function checkScore(color) {
         console.log(`you lost a point! score = ${score}`);
         updateScoreBoard();
     } if (blueSquares === 0) {
+        // clearInterval(time)
         // round++
         // updateRound();
         // startTimer();
@@ -196,7 +199,6 @@ function checkScore(color) {
 function updateScoreBoard() {
     document.querySelector('h4').innerText = `Score: ${score}`;
 }
-console.log(updateScoreBoard())
 
 // $('.squares').on('click', '.square', handleSquareClick);
 // jQuery event delegation

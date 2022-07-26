@@ -47,6 +47,8 @@ function handleStartGame() {
         startTimer();
     } else if (round === 2) {
         time = 30;
+        squaresContainer.innerHTML = '';
+        // gameBoard.style.display = "none";
         createSquares(96);
         startTimer();
     } else if (round === 3) {
@@ -64,6 +66,7 @@ function startTimer() {
         if (blueSquares === 0 && time > 0) {
             console.log('You won the round')
             clearInterval(timer)
+            squaresContainer.innerHTML = '';
             updateTime()
             round++
             updateRound()
@@ -80,8 +83,7 @@ function startTimer() {
         clearInterval(timer);
   
         // Clear squares from DOM
-        squaresContainer.innerHTML = '';
-        gameBoard.style.display = "none";
+        // gameBoard.style.display = "none";
   
         if ((round < 3) && (score > 0)) {
             updateTime()

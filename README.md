@@ -20,7 +20,8 @@ Find and eliminate all the blue squares before time runs out! Can you beat all t
 -When user clicks begin, timer starts and squares populate with either a red, blue, green, or purple square
 -When user click a color, the square disappears
 -If the square is blue, the user gains 1 point, if the square is red, green, or purple, 1 point is subtracted from the score
--When round is over, the scores, round, and timer update for the user to start again with increased difficulty
+-When round is over, the scores, round, and timer update for the user to start again
+-Each round is 30 seconds, first round has 64 squares, second round has 96, and the third round has 128 squares
 
 ## General Info
 

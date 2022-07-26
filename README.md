@@ -48,7 +48,6 @@ Find and eliminate all the blue squares before time runs out! Can you beat all t
 
 This project is created with:
 
-* jQuery version: 3.6.0
 * Ipsum version: 2.33
 * Ament library version: 999
 

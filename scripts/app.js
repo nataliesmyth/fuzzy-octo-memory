@@ -48,11 +48,11 @@ function handleStartGame() {
     } else if (round === 2) {
         time = 30;
         squaresContainer.innerHTML = '';
-        // gameBoard.style.display = "none";
         createSquares(96);
         startTimer();
     } else if (round === 3) {
         time = 30;
+        squaresContainer.innerHTML = '';
         createSquares(128);
         startTimer();
     }

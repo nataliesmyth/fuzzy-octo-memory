@@ -67,6 +67,7 @@ function startTimer() {
             updateTime()
             round++
             updateRound()
+            getRandomColor()
           }
       else if (time > 0) {
         time--;

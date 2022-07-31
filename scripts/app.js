@@ -90,6 +90,14 @@ function startTimer() {
             round++;
             updateRound();
            
+        } else if (round > 3){
+            alert(`Game Over! Your score is ${score}`);
+            score = 0;
+            round = 1;
+            time = 30;
+            updateRound();
+            updateTime();
+            updateScoreBoard();
         } else {
           alert(`Game Over! Your score is ${score}`);
           score = 0;

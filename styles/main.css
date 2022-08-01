@@ -47,7 +47,9 @@ main {
 }
 
 .game-container {
-    margin: 2em;
+  position: absolute;
+  background-color: red;
+  margin: 2em;
 }
 
 .game-title {

@@ -61,6 +61,17 @@ main {
   text-align: center;
 }
 
+
+.close-btn {
+  float: right; 
+  color: lightgray; 
+  font-size: 24px;  
+  font-weight: bold;
+}
+.close-btn:hover {
+  color: darkgray;
+}
+
 .squares {
     position: absolute;
     text-align: center;
@@ -81,19 +92,23 @@ main {
     background-color: rgb(96, 150, 186);
 }
 
-.close-btn {
-  float: right; 
-  color: lightgray; 
-  font-size: 24px;  
-  font-weight: bold;
-}
-.close-btn:hover {
-  color: darkgray;
-}
-
 .welcome-container {
   display: flex;
   justify-content: center;
+  opacity: 1;
+  animation-name: fadeInWelcomeContainer;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+}
+
+@keyframes fadeInWelcomeContainer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes animatetop {

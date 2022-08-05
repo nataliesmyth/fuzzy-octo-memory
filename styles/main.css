@@ -75,10 +75,12 @@ main {
 .squares {
     position: absolute;
     text-align: center;
+    background-color: lightgoldenrodyellow;
     /* margin: 5em; */
     /* height: 100vh; */
-    padding: 1%;
-    
+    padding: 2%;
+    border: .15em black solid;
+    border-radius: 5%;
 }
 
 .squares div {
@@ -134,5 +136,9 @@ main {
 
   .game-container {
     margin: .25em;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 0;
   }
 }

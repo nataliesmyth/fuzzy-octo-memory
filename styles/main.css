@@ -34,6 +34,7 @@ header {
 
 main {
   margin: 0 auto;
+  position: relative;
 }
   
 
@@ -47,7 +48,13 @@ main {
 }
 
 .game-container {
-    margin: 2em;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 110px 0 0 -170px;
 }
 
 .game-title {
@@ -55,6 +62,7 @@ main {
 }
 
 .squares {
+    position: absolute;
     text-align: center;
     /* margin: 5em; */
     /* height: 100vh; */
@@ -66,8 +74,8 @@ main {
     margin: 0.75%;
     /* padding: 1%; */
     display: inline-block;
-    height: 2em;
-    width: 2em;
+    height: 25px;
+    width: 25px;
     /* box-shadow: 0.25em 0.25em 0px 0px grey; */
     border: .15em black solid;
     background-color: rgb(96, 150, 186);

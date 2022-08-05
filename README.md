@@ -11,10 +11,6 @@ Find and eliminate all the blue squares before time runs out! Can you beat all t
 * [Technologies](#technologies)
 * [Setup](#setup)
 
-## Screenshots
-
-![screenshot](./img/screenshot.png)
-
 ## User Stories
 
 -When user clicks begin, timer starts and squares populate with either a red, blue, green, or purple square
@@ -64,9 +60,8 @@ Room for improvement:
 
 To do:
 
-* Prevent multiple timers
-* Have a round end when
-* Keep track of users scores
+* User friendly design
+* Have fixed container so that the game never scrolls
 
 ## Acknowledgements
 
@@ -84,7 +79,7 @@ Created by [Natalie Smyth](https://www.nataliesmyth.com/) - feel free to contact
 <!-- ## License -->
 <!-- This project is open source and available under the [... License](). -->
 
-## Setup
+## Setups
 
 To run this project, install it locally using npm:
 

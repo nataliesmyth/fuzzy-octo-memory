@@ -44,8 +44,9 @@ Find and eliminate all the blue squares before time runs out! Can you beat all t
 
 This project is created with:
 
-* Ipsum version: 2.33
-* Ament library version: 999
+* Javascript
+* CSS
+* HTML
 
 ## Project Status
 
@@ -62,14 +63,6 @@ To do:
 
 * User friendly design
 * Have fixed container so that the game never scrolls
-
-## Acknowledgements
-
-Give credit here.
-
-* This project was inspired by...
-* This project was based on [this tutorial](https://www.example.com).
-* Many thanks to...
 
 ## Contact
 
@@ -89,24 +82,3 @@ cd ../lorem
 npm install
 npm start
 ```
-
-// CODE ORGANIZATION
-
-// Third Party Libraries: moment, underscore, jquery
-// Constants
-// App State
-// Cached DOM Elements
-// Event Listeners
-// Functions
-// steps to start game
-    // select button
-    // save button in variable
-    // add click event listener to button
-
-// PSEUDOCODE: CREATE SQUARES FUNCTION
-// How many squares?
-// Create div element for each square
-// Colors array for color options
-// Random index to get random color
-// Apply random color to the div as background-color
-// Append the square to parent '.squares' element

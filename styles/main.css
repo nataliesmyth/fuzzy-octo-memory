@@ -151,4 +151,8 @@ main {
   .game-container {
     width: 268px;
   }
+
+  .squares {
+    margin: 0 .25em 0 .25em;
+  }
 }

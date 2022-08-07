@@ -126,6 +126,7 @@ main {
 
 @media screen and (max-width: 390px) {
   .enter-message {
+    font-size: .75em;
     margin: .25em;
     border: 5px #000 solid;
   }

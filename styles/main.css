@@ -131,9 +131,10 @@ main {
   }
 
   .squares div {
-    width: 1em;
-    height: 1em;
+    width: .75em;
+    height: .75em;
     border: .1em black solid;
+    padding: 0;
   }
 
   .game-container {
@@ -142,5 +143,11 @@ main {
     top: 0;
     left: 0;
     padding: 0;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .game-container {
+    width: 268px;
   }
 }

@@ -33,7 +33,7 @@ header {
 }
 
 main {
-  margin: 0 auto;
+  margin: 2em auto;
   position: relative;
   opacity: 1;
   animation-name: fadeInWelcomeContainer;

@@ -7,7 +7,7 @@
 body {
     font-family: 'Odibee Sans', cursive, sans-serif;
     background-color: #f1fcf8;
-    display: flex;
+    /* display: flex; */
     font-size: 32px;
 }
 
@@ -41,7 +41,13 @@ main {
   animation-timing-function: ease-in;
   animation-duration: 2s;
 }
-  
+
+nav {
+  background-color: red;
+  padding: .75em;
+  display: flex;
+  justify-content: center;
+}
 
 .enter-message {
   background-color: #fff;

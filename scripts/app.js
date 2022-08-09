@@ -15,11 +15,14 @@ const gameBoard = document.getElementById('game-board');
 const enterGame = document.getElementById('main');
 const enterButton = document.getElementById('enter-btn')
 const enterMessage = document.getElementById('enter-message');
+const nav = document.getElementById('nav')
 
 //  ------------------- Event Listeners
 
 enterGame.style.display = "none";
 gameBoard.style.display = "none";
+nav.style.display = "none";
+
 
 startButton.addEventListener('click', handleStartGame);
 
@@ -36,6 +39,7 @@ squaresContainer.addEventListener('click', handleSquareClick);
 
 function handleShowGame() {
     enterGame.style.display = "block";
+    nav.style.display = "block";
     enterButton.style.display = "none";
     enterMessage.style.display = "none";
 }

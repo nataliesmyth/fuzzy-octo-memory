@@ -11,6 +11,7 @@ let blueSquares = 0
 
 const startButton = document.getElementById('startGame');
 const squaresContainer = document.querySelector('.squares');
+const squares = document.getElementById('squares')
 const gameBoard = document.getElementById('game-board');
 const enterGame = document.getElementById('main');
 const enterButton = document.getElementById('enter-btn')
@@ -19,9 +20,11 @@ const nav = document.getElementById('nav')
 
 //  ------------------- Event Listeners
 
-enterGame.style.display = "none";
-gameBoard.style.display = "none";
-nav.style.display = "none";
+squaresContainer.style.display = none;
+//DO NOT MERGE - FOR TESTING ONLY
+// enterGame.style.display = "none";
+// gameBoard.style.display = "none";
+// nav.style.display = "none";
 
 
 startButton.addEventListener('click', handleStartGame);

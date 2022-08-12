@@ -21,9 +21,11 @@ const nav = document.getElementById('nav')
 //  ------------------- Event Listeners
 
 squaresContainer.style.display = none;
-//DO NOT MERGE - FOR TESTING ONLY
+
 enterGame.style.display = "none";
 nav.style.display = "none";
+enterMessage.style.display = "none";
+
 
 
 startButton.addEventListener('click', handleStartGame);

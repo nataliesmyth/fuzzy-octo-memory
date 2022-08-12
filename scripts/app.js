@@ -22,18 +22,17 @@ const nav = document.getElementById('nav')
 
 squaresContainer.style.display = none;
 //DO NOT MERGE - FOR TESTING ONLY
-// enterGame.style.display = "none";
-// gameBoard.style.display = "none";
-// nav.style.display = "none";
+enterGame.style.display = "none";
+nav.style.display = "none";
 
 
 startButton.addEventListener('click', handleStartGame);
 
 
 /************* Event Delegation *************/
-    // Colored squares do not exist on the dom until Begin is clicked.
-    // Event listeners are registered when the DOM loads
-    // To fix this problem, use event delegation (assigning listener to parent)
+// Colored squares do not exist on the dom until Begin is clicked.
+// Event listeners are registered when the DOM loads
+// To fix this problem, use event delegation (assigning listener to parent)
 
 enterButton.addEventListener('click', handleShowGame);
 squaresContainer.addEventListener('click', handleSquareClick);
@@ -41,6 +40,7 @@ squaresContainer.addEventListener('click', handleSquareClick);
 // -------------------- Function Declarations
 
 function handleShowGame() {
+    gameBoard.style.display = "block";
     enterGame.style.display = "block";
     nav.style.display = "block";
     enterButton.style.display = "none";

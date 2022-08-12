@@ -33,7 +33,7 @@ header {
 }
 
 main {
-  margin: 0 auto;
+  margin: 1em;
   position: relative;
   opacity: 1;
   animation-name: fadeInWelcomeContainer;
@@ -45,8 +45,7 @@ main {
 nav {
   background-color: red;
   padding: .75em;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 .enter-message {

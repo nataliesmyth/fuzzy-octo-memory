@@ -55,6 +55,10 @@ nav {
   text-align: center;
   border: 10px #000 solid;
   border-radius: 1em;
+  animation-name: fadeInWelcomeContainer;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
 }
 
 .game-container {

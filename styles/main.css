@@ -39,6 +39,7 @@ header {
 }
 
 main {
+
   /* margin: 1em; */
   position: relative;
   opacity: 1;
@@ -47,6 +48,7 @@ main {
   animation-timing-function: ease-in;
   animation-duration: 2s;
 }
+
 
 nav {
   background-color: #e71d36;

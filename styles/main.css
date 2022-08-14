@@ -39,11 +39,7 @@ header {
 }
 
 main {
-<<<<<<< HEAD
-  margin: 2em auto;
-=======
   /* margin: 1em; */
->>>>>>> navbar
   position: relative;
   opacity: 1;
   animation-name: fadeInWelcomeContainer;
@@ -51,18 +47,13 @@ main {
   animation-timing-function: ease-in;
   animation-duration: 2s;
 }
-<<<<<<< HEAD
-=======
 
 nav {
   background-color: #e71d36;
   padding: .25em;
   text-align: center;
   font-size: .75em;
-  font-weight: bold;
-  -webkit-text-stroke: .25px black;
 }
->>>>>>> navbar
 
 .enter-message {
   background-color: #fdfffc;
@@ -78,7 +69,6 @@ nav {
 }
 
 .game-container {
-  display: none;
   width: 300px;
   height: 300px;
   padding: 20px;
@@ -106,25 +96,26 @@ nav {
 }
 
 .squares {
-  position: absolute;
-  text-align: center;
-  background-color: #fdfffc;
-  /* margin: 5em; */
-  /* height: 100vh; */
-  padding: 2%;
-  border: .15em #011627 solid;
-  border-radius: 5%;
+  font-size: 1.25em;
+    position: absolute;
+    text-align: center;
+    background-color: #fdfffc;
+    /* margin: 5em; */
+    /* height: 100vh; */
+    padding: 2%;
+    border: .15em #011627 solid;
+    border-radius: 5%;
 }
 
 .squares div {
-  margin: 0.75%;
-  /* padding: 1%; */
-  display: inline-block;
-  height: 25px;
-  width: 25px;
-  /* box-shadow: 0.25em 0.25em 0px 0px grey; */
-  border: .15em #011627 solid;
-  background-color: rgb(96, 150, 186);
+    margin: 0.75%;
+    padding: 1%;
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    /* box-shadow: 0.25em 0.25em 0px 0px grey; */
+    border: .05em #011627 solid;
+    background-color: rgb(96, 150, 186);
 }
 
 .welcome-container {
@@ -132,7 +123,6 @@ nav {
   /* justify-content: center; */
   text-align: center;
   padding: 1em;
-  font-size: 1.25em;
 }
 
 @keyframes fadeInWelcomeContainer {

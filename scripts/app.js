@@ -2,7 +2,7 @@
 
 // -------------------- App State
 
-let time = 30000;
+let time = 30;
 let score = 0;
 let round = 1;
 let blueSquares = 0
@@ -11,7 +11,6 @@ let blueSquares = 0
 
 const startButton = document.getElementById('startGame');
 const squaresContainer = document.querySelector('.squares');
-const squares = document.getElementById('squares')
 const gameBoard = document.getElementById('game-board');
 const enterGame = document.getElementById('main');
 const enterButton = document.getElementById('enter-btn')
@@ -20,19 +19,17 @@ const nav = document.getElementById('nav')
 
 //  ------------------- Event Listeners
 
-squaresContainer.style.display = none;
-//DO NOT MERGE - FOR TESTING ONLY
 enterGame.style.display = "none";
-nav.style.display = "none";
+gameBoard.style.display = "none";
 
 
 startButton.addEventListener('click', handleStartGame);
 
 
 /************* Event Delegation *************/
-// Colored squares do not exist on the dom until Begin is clicked.
-// Event listeners are registered when the DOM loads
-// To fix this problem, use event delegation (assigning listener to parent)
+    // Colored squares do not exist on the dom until Begin is clicked.
+    // Event listeners are registered when the DOM loads
+    // To fix this problem, use event delegation (assigning listener to parent)
 
 enterButton.addEventListener('click', handleShowGame);
 squaresContainer.addEventListener('click', handleSquareClick);
@@ -40,9 +37,7 @@ squaresContainer.addEventListener('click', handleSquareClick);
 // -------------------- Function Declarations
 
 function handleShowGame() {
-    gameBoard.style.display = "block";
     enterGame.style.display = "block";
-    nav.style.display = "block";
     enterButton.style.display = "none";
     enterMessage.style.display = "none";
 }

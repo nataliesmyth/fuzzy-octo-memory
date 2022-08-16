@@ -25,11 +25,14 @@ button {
   -webkit-text-stroke: 1px #011627;
 }
 
-h1, h3, h6 {
+h1, h2, h3, h4, h5, h6 {
   padding-top: .5em;
   padding-bottom: .5em;
 }
 
+.timers h4 {
+  padding: 0 0 0 0;
+}
 header {
     width: 100%;
     display: block;
@@ -56,12 +59,12 @@ nav {
 }
 
 .enter-message {
-  background-color: #fdfffc;
+  /* background-color: #fdfffc; */
   margin: 2em auto;
   padding: 2em;
   text-align: center;
-  border: 10px #011627 solid;
-  border-radius: 1em;
+  /* border: 10px #011627 solid; */
+  /* border-radius: 1em; */
   animation-name: fadeInWelcomeContainer;
   animation-iteration-count: 1;
   animation-timing-function: ease-in;

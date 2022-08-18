@@ -154,7 +154,7 @@ nav {
   .enter-message {
     font-size: .75em;
     margin: .25em;
-    border: 5px #011627 solid;
+    /* border: 5px #011627 solid; */
   }
 
   .squares div {

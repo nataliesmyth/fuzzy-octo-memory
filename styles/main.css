@@ -26,8 +26,8 @@ button {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  /* padding-top: .5em; */
-  /* padding-bottom: .5em; */
+  padding-top: .5em;
+  padding-bottom: .5em;
 }
 
 .timers h4 {
@@ -106,7 +106,7 @@ nav {
   font-size: 1.25em;
     position: absolute;
     text-align: center;
-    background-color: #fd  fffc;
+    background-color: #fdfffc;
     /* margin: 5em; */
     /* height: 100vh; */
     padding: 2%;

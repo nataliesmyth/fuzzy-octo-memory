@@ -103,15 +103,16 @@ nav {
 }
 
 .squares {
-  font-size: 1.25em;
-    position: absolute;
-    text-align: center;
-    background-color: #fdfffc;
-    /* margin: 5em; */
-    /* height: 100vh; */
-    padding: 2%;
-    border: .15em #011627 solid;
-    border-radius: 5%;
+  /* font-size: 1.25em; */
+  /* margin: 1em auto; */
+  position: absolute;
+  text-align: center;
+  background-color: #fdfffc;
+  /* margin: 5em; */
+  /* height: 100vh; */
+  padding: .5%;
+  border: .15em #011627 solid;
+  border-radius: 5%;
 }
 
 .squares div {
@@ -168,7 +169,7 @@ nav {
     margin: .25em;
     position: relative;
     top: 0;
-    left: 0;
+    left: 6%;
     padding: 0;
   }
 }

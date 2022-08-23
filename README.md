@@ -28,13 +28,13 @@ Find and eliminate all the blue squares before time runs out! Can you beat all t
 -where should they populate? inside the square section
 -what should the timer start at? 30s
 
-1. When user clicks on a square, the color disappears and score should go up or down
+1. When user clicks on a square, it disappears and score will go up if the square is blue or down if the square is any other color
 
 -what adds score, what subtracts? Blue square click adds 1 point, all else subtracts 1 point
 -how quickly should it disappear? Immediately
 -how many points should be added or subtracted?
 
-1. When round is over, scores and timer should ben updated for the user to start over with increased difficulty
+1. When round is over, scores and timer should be updated for the user to start over with increased difficulty
 -how many players? 1
 -what is the measure of difficulty? numbers of squares and time
 -what ends a round? When time = 0 OR all blue squares are clicked
@@ -61,8 +61,17 @@ Room for improvement:
 
 To do:
 
-* User friendly design
-* Have fixed container so that the game never scrolls
+
+* Remove tiny square between rounds
+* Refresh entire game after the third round
+
+## Acknowledgements
+
+Give credit here.
+
+* This project was inspired by...
+* This project was based on [this tutorial](https://www.example.com).
+* Many thanks to...
 
 ## Contact
 

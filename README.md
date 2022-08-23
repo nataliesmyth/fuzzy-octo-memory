@@ -28,7 +28,6 @@ Find and eliminate all the blue squares before time runs out! Can you beat all t
 1. Round 3 = 128 squares
 1. For each round, timer = 30 seconds
 
-
 1. When user clicks on a square, it disappears and score will go up if the square is blue or down if the square is any other color
 
 -what adds score, what subtracts? Blue square click adds 1 point, all else subtracts 1 point

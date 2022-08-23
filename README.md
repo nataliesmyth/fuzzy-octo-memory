@@ -22,11 +22,12 @@ Find and eliminate all the blue squares before time runs out! Can you beat all t
 ## General Info
 
 1. When user clicks begin, timer starts and random colored squares populate the screen
--What colors? Red, blue, green, purple
--how many squares? round 1: 25 squares, double the squares each round
--what are squares? colored boxes on the screen
--where should they populate? inside the square section
--what should the timer start at? 30s
+1. Squares will be red, blue, green, or purple
+1. Round 1 = 64 squares
+1. Round 2 = 96 squares
+1. Round 3 = 128 squares
+1. For each round, timer = 30 seconds
+
 
 1. When user clicks on a square, it disappears and score will go up if the square is blue or down if the square is any other color
 

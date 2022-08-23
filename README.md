@@ -11,10 +11,6 @@ Find and eliminate all the blue squares before time runs out! Can you beat all t
 * [Technologies](#technologies)
 * [Setup](#setup)
 
-## Screenshots
-
-![screenshot](./img/screenshot.png)
-
 ## User Stories
 
 -When user clicks begin, timer starts and squares populate with either a red, blue, green, or purple square
@@ -48,8 +44,9 @@ Find and eliminate all the blue squares before time runs out! Can you beat all t
 
 This project is created with:
 
-* Ipsum version: 2.33
-* Ament library version: 999
+* Javascript
+* CSS
+* HTML
 
 ## Project Status
 
@@ -63,6 +60,7 @@ Room for improvement:
 * Design and UX need work, how the game works isn't intuitive and there's too little direction
 
 To do:
+
 
 * Remove tiny square between rounds
 * Refresh entire game after the third round
@@ -83,7 +81,7 @@ Created by [Natalie Smyth](https://www.nataliesmyth.com/) - feel free to contact
 <!-- ## License -->
 <!-- This project is open source and available under the [... License](). -->
 
-## Setup
+## Setups
 
 To run this project, install it locally using npm:
 
@@ -93,24 +91,3 @@ cd ../lorem
 npm install
 npm start
 ```
-
-// CODE ORGANIZATION
-
-// Third Party Libraries: moment, underscore, jquery
-// Constants
-// App State
-// Cached DOM Elements
-// Event Listeners
-// Functions
-// steps to start game
-    // select button
-    // save button in variable
-    // add click event listener to button
-
-// PSEUDOCODE: CREATE SQUARES FUNCTION
-// How many squares?
-// Create div element for each square
-// Colors array for color options
-// Random index to get random color
-// Apply random color to the div as background-color
-// Append the square to parent '.squares' element

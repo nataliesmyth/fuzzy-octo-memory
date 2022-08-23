@@ -17,40 +17,33 @@
 
 
 <body>
-
-<div class="enter-message" id="enter-message">
-  <h1>Welcome to Poke-A-Square!</h1>
-  <h3>Click all the blue squares before time runs out.</h3>
-  <h6>Can you beat all three levels?</h6>
-  <!-- <form action="" method="get" class="form-name">
-    <label for="name">Enter your name:</label>
-    <input type="text" name="name" id="name" required>
-    <button type="submit" value="Enter Game">
-  </form> -->
-  <button class="enter-btn" id="enter-btn">Enter Game</button>
-</div>
-
-<main id="main">
-  <h1 class="game-title">Poke-A-Square!</h1>
-    <div class="welcome-container">
-      <section class="timers">
-        <h4>Score: 0</h4>
-        <h4 id="timer">timer: 30s</h4>
-        <h4 id="round">round: 1</h4>
-      </section>
-      <section class="start-btn">
-        <button id="startGame">Begin</button>
-
-      </section>
-    </div>
-
-    <div class="game-container" id="game-board">
-      <section class="squares"></section>
-    </div>
+  <div class="enter-message" id="enter-message">
+    <h1>Poke-A-Square!</h1>
+    <h2>Click all the blue squares before time runs out</h2>
+    <h4>Can you beat all three levels?</h4>
     
-</main>
+    <button class="enter-btn" id="enter-btn">Enter Game</button>
+  </div>
+  
+  <main id="main">
+    <nav id="nav">Poke-A-Square</nav>
+    <!-- <h1 class="game-title">Poke-A-Square</h1> -->
+      <div class="welcome-container">
+        <section class="timers">
+          <h4>Score: 0</h4>
+          <h4 id="timer">timer: 30s</h4>
+          <h4 id="round">round: 1</h4>
+        </section>
+        <section class="start-btn">
+          <button id="startGame">Begin</button>
 
+        </section>
+      </div>
 
+      <div class="game-container" id="game-board">
+        <section class="squares"></section>
+      </div>
+  </main>
 
 </body>
 </html>

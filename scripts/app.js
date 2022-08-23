@@ -2,7 +2,7 @@
 
 // -------------------- App State
 
-let time = 30000;
+let time = 3000000;
 let score = 0;
 let round = 1;
 let blueSquares = 0
@@ -15,11 +15,13 @@ const gameBoard = document.getElementById('game-board');
 const enterGame = document.getElementById('main');
 const enterButton = document.getElementById('enter-btn')
 const enterMessage = document.getElementById('enter-message');
+const nav = document.getElementById('nav')
 
 //  ------------------- Event Listeners
 
 enterGame.style.display = "none";
 gameBoard.style.display = "none";
+
 
 startButton.addEventListener('click', handleStartGame);
 

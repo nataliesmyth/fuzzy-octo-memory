@@ -129,8 +129,18 @@ nav {
 .welcome-container {
   /* display: flex; */
   /* justify-content: center; */
-  text-align: center;
+  /* text-align: center; */
   padding: 1em;
+  display: inline-block;
+}
+
+.timers {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.timers h4 {
+  padding: 0 0.5em;
 }
 
 @keyframes fadeInWelcomeContainer {

@@ -131,14 +131,6 @@ nav {
   justify-content: center;
 }
 
-.welcome-container {
-  /* display: flex; */
-  /* justify-content: center; */
-  /* text-align: center; */
-  /* padding: 1em; */
-  /* display: inline-block; */
-}
-
 .timers {
   display: flex;
   justify-content: space-evenly;

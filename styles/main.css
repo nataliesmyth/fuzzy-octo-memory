@@ -107,10 +107,9 @@ nav {
 
 .squares div {
     margin: 0.75%;
-    padding: 1%;
     display: inline-block;
-    height: 2em;
-    width: 2em;
+    height: 1.75em;
+    width: 1.75em;
     box-shadow: 0.05em 0.05em 0px 0px grey;
     border: .05em #011627 solid;
     background-color: rgb(96, 150, 186);

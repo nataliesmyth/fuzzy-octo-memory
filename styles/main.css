@@ -75,16 +75,6 @@ nav {
   animation-duration: 2s;
 }
 
-.game-container {
-  width: 300px;
-  height: 300px;
-  padding: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: 110px 0 0 -170px;
-}
-
 .game-title {
   text-align: center;
   font-size: 1em;
@@ -103,8 +93,8 @@ nav {
 }
 
 .squares {
-  /* font-size: 1.25em; */
-  /* margin: 1em auto; */
+  font-size: 1.25em;
+  margin: 0 10em;
   position: absolute;
   text-align: center;
   background-color: #fdfffc;
@@ -117,20 +107,31 @@ nav {
 
 .squares div {
     margin: 0.75%;
-    padding: 1%;
     display: inline-block;
-    height: 25px;
-    width: 25px;
-    /* box-shadow: 0.25em 0.25em 0px 0px grey; */
+    height: 1.75em;
+    width: 1.75em;
+    box-shadow: 0.05em 0.05em 0px 0px grey;
     border: .05em #011627 solid;
     background-color: rgb(96, 150, 186);
+    border-radius: 50%;
+}
+
+.start-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.timers {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.timers h4 {
+  padding: 0 0.25em;
 }
 
 .welcome-container {
-  /* display: flex; */
-  /* justify-content: center; */
-  text-align: center;
-  padding: 1em;
+  margin: 2em auto;
 }
 
 @keyframes fadeInWelcomeContainer {
@@ -149,6 +150,13 @@ nav {
 @keyframes animatetop {
   from {top:-300px; opacity:0}
   to {top:0; opacity:1}
+}
+
+@media screen and (max-width: 1500px) {
+  .squares {
+    margin: 0 1em;
+    font-size: 1em;
+  }
 }
 
 @media screen and (max-width: 390px) {

@@ -22,14 +22,14 @@ const nav = document.getElementById('nav')
 enterGame.style.display = "none";
 gameBoard.style.display = "none";
 
-
 startButton.addEventListener('click', handleStartGame);
 
 
 /************* Event Delegation *************/
-    // Colored squares do not exist on the dom until Begin is clicked.
-    // Event listeners are registered when the DOM loads
-    // To fix this problem, use event delegation (assigning listener to parent)
+// document.getElementById('squares-div').style.display = 'none';
+// Colored squares do not exist on the dom until Begin is clicked.
+// Event listeners are registered when the DOM loads
+// To fix this problem, use event delegation (assigning listener to parent)
 
 enterButton.addEventListener('click', handleShowGame);
 squaresContainer.addEventListener('click', handleSquareClick);

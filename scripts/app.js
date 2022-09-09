@@ -76,16 +76,14 @@ function startTimer() {
           }
       else if (time > 0) {
         time--;
-        console.log(time);
         updateTime();
-        // console.log(blueSquares)
       } else {
         console.log('Time is up');
         // Stop Timer
         clearInterval(timer);
   
         // Clear squares from DOM
-        // gameBoard.style.display = "none";
+        gameBoard.style.display = "none";
   
         if ((round < 3) && (score > 0)) {
             updateTime()
@@ -149,7 +147,6 @@ function getRandomColor() {
     
     // console.log(randomColor)
     return randomColor;
-    trackRandomColor()
 }
 
 
@@ -166,12 +163,15 @@ function trackRandomColor() {
 
 function handleSquareClick(event) {
     // event.target is what we click on
-    // console.log(event.target)
+    console.log(event.target)
     // console.log(event.target.classList.contains('square'));
     if (event.target.classList.contains('square')) {
         // console.log('square clicked!');
+        // squaresContainer.style.opacity = 0;
+        // event.target.classList.squaresContainer.style.opacity = 0;
         squaresContainer.removeChild(event.target)
     squareColor = event.target.style.backgroundColor;
+    squareColor.backgroundColor = '#fdfffc';
     console.log(`this is: ${squareColor}`)
     
     
@@ -188,13 +188,13 @@ function checkScore(color) {
     if (color === "blue") { 
         score++;
         blueSquares--;
-        console.log(blueSquares);
-        console.log(`you scored! score = ${score}`);
+        // console.log(blueSquares);
+        // console.log(`you scored! score = ${score}`);
         // Update the UI
         updateScoreBoard();
     } else if ((color != "blue") && (score >= 0)) {
         score--;
-        console.log(`you lost a point! score = ${score}`);
+        // console.log(`you lost a point! score = ${score}`);
         updateScoreBoard();
     } 
     // if color = blue; score = score + 1

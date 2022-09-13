@@ -131,7 +131,7 @@ nav {
 }
 
 .welcome-container {
-  margin: 2em auto;
+  margin: .5em auto;
 }
 
 @keyframes fadeInWelcomeContainer {

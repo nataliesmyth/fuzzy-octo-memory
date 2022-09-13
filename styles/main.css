@@ -7,7 +7,6 @@
 body {
     font-family: 'Odibee Sans', cursive, sans-serif;
     background-color: #2ec4b6;
-    /* display: flex; */
     font-size: 32px;
     -webkit-text-stroke: .25px black;
     color: #fdfffc;
@@ -63,12 +62,9 @@ nav {
 }
 
 .enter-message {
-  /* background-color: #fdfffc; */
   margin: 2em auto;
   padding: 2em;
   text-align: center;
-  /* border: 10px #011627 solid; */
-  /* border-radius: 1em; */
   animation-name: fadeInWelcomeContainer;
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
@@ -78,7 +74,6 @@ nav {
 .game-title {
   text-align: center;
   font-size: 1em;
-  /* background-color: #e71d36; */
 }
 
 
@@ -98,8 +93,6 @@ nav {
   position: absolute;
   text-align: center;
   background-color: #fdfffc;
-  /* margin: 5em; */
-  /* height: 100vh; */
   padding: .5%;
   border: .15em #011627 solid;
   border-radius: 5%;
@@ -123,7 +116,7 @@ nav {
 
 .timers {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .timers h4 {
@@ -163,7 +156,6 @@ nav {
   .enter-message {
     font-size: .75em;
     margin: .25em;
-    /* border: 5px #011627 solid; */
   }
 
   .squares div {

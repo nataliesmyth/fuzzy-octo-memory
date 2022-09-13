@@ -93,9 +93,12 @@ nav {
 }
 
 .squares {
-  font-size: 1.25em;
-  margin: 0 10em;
-  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+  /* font-size: 1.25em; */
+  /* margin: 0 10em; */
+  /* position: absolute; */
   text-align: center;
   background-color: #fdfffc;
   /* margin: 5em; */
@@ -103,17 +106,22 @@ nav {
   padding: .5%;
   border: .15em #011627 solid;
   border-radius: 5%;
+  grid-template-rows: auto;
 }
 
 .squares div {
-    margin: 0.75%;
-    display: inline-block;
-    height: 1.75em;
-    width: 1.75em;
-    box-shadow: 0.05em 0.05em 0px 0px grey;
-    border: .05em #011627 solid;
-    background-color: rgb(96, 150, 186);
-    border-radius: 50%;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: row1-start;
+  grid-row-end: 2;
+  margin: 0.75%;
+  /* display: inline-block; */
+  height: 1.75em;
+  width: 1.75em;
+  box-shadow: 0.05em 0.05em 0px 0px grey;
+  border: .05em #011627 solid;
+  background-color: rgb(96, 150, 186);
+  border-radius: 50%;
 }
 
 .start-btn {

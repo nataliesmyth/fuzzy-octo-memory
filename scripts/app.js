@@ -11,6 +11,7 @@ let blueSquares = 0
 
 const startButton = document.getElementById('startGame');
 const squaresContainer = document.querySelector('.squares');
+const squaresId = document.getElementById('squares-div')
 const gameBoard = document.getElementById('game-board');
 const enterGame = document.getElementById('main');
 const enterButton = document.getElementById('enter-btn')
@@ -44,6 +45,7 @@ function handleShowGame() {
 
 function handleStartGame() {
     gameBoard.style.display = "block";
+    squaresId.style.display = "block";
     if (round === 1) {
         createSquares(64);
         startTimer();
@@ -67,6 +69,8 @@ function startTimer() {
     const timer = setInterval(function () {
         if (blueSquares === 0 && time > 0) {
             console.log('You won the round')
+            squaresId.style.display = "none";
+
             clearInterval(timer)
             squaresContainer.innerHTML = '';
             updateTime()
@@ -78,12 +82,13 @@ function startTimer() {
         time--;
         updateTime();
       } else {
-        console.log('Time is up');
-        // Stop Timer
-        clearInterval(timer);
-  
-        // Clear squares from DOM
-        gameBoard.style.display = "none";
+          console.log('Time is up');
+          // Stop Timer
+          clearInterval(timer);
+          
+          // Clear squares from DOM
+          gameBoard.style.display = "none";
+          squaresId.style.display = "none";
   
         if ((round < 3) && (score > 0)) {
             updateTime()

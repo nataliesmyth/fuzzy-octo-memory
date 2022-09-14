@@ -67,7 +67,7 @@ function handleStartGame() {
 
 function startTimer() {
     const timer = setInterval(function () {
-        if (blueSquares === 0 && time > 0) {
+        if (blueSquares === 0 && time > 0 && round <= 3) {
             console.log('You won the round')
             squaresId.style.display = "none";
 
@@ -194,7 +194,7 @@ function checkScore(color) {
         score++;
         blueSquares--;
         // console.log(blueSquares);
-        // console.log(`you scored! score = ${score}`);
+        console.log(`you scored! score = ${score}`);
         // Update the UI
         updateScoreBoard();
     } else if ((color != "blue") && (score >= 0)) {

@@ -185,8 +185,18 @@ function handleSquareClick(event) {
 }
 
 function updateRound() {
-    document.getElementById('round').innerText = `round : ${round};`
-    document.getElementById('startGame').style.display = 'inline';
+    if (round <= 3) {
+        document.getElementById('round').innerText = `round : ${round};`
+        document.getElementById('startGame').style.display = 'inline';
+    } else {
+        alert(`Game Over! Your score is ${score}`);
+        score = 0;
+        round = 1;
+        time = 30;
+        updateRound();
+        updateTime();
+        updateScoreBoard();
+      }
 } 
 
 function checkScore(color) {

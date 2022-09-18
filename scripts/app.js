@@ -193,13 +193,13 @@ function checkScore(color) {
     if (color === "blue") { 
         score++;
         blueSquares--;
-        // console.log(blueSquares);
+        console.log(blueSquares);
         console.log(`you scored! score = ${score}`);
         // Update the UI
         updateScoreBoard();
     } else if ((color != "blue") && (score >= 0)) {
         score--;
-        // console.log(`you lost a point! score = ${score}`);
+        console.log(`you lost a point! score = ${score}`);
         updateScoreBoard();
     } 
     // if color = blue; score = score + 1
@@ -207,7 +207,7 @@ function checkScore(color) {
 }
 
 function updateScoreBoard() {
-    document.querySelector('h4').innerText = `Score: ${score}`;
+    document.getElementById('score').innerText = `Score: ${score}`;
 }
 
 // $('.squares').on('click', '.square', handleSquareClick);

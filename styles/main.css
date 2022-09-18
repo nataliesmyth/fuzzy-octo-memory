@@ -19,7 +19,7 @@ button {
   font-family: 'Odibee Sans', cursive, sans-serif;
   margin: 0.5em;
   font-size: 1.5em;
-  background-color: #e71d36;
+  background-color: blue;
   color: #fdfffc;
   -webkit-text-stroke: 1px #011627;
 }
@@ -53,12 +53,16 @@ main {
 
 nav {
   background-color: #fdfffc;
-  color: #e71d36;
+  color: blue;
   padding: .25em;
   text-align: center;
   font-size: .75em;
   font-size: 1.25em;
   border-bottom: #011627 1px solid;
+}
+
+.blue-blaster {
+  color: blue;
 }
 
 .enter-message {

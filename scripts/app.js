@@ -22,7 +22,7 @@ const nav = document.getElementById('nav')
 
 enterGame.style.display = "none";
 gameBoard.style.display = "none";
-
+nav.style.display = "none";
 startButton.addEventListener('click', handleStartGame);
 
 
@@ -38,6 +38,7 @@ squaresContainer.addEventListener('click', handleSquareClick);
 // -------------------- Function Declarations
 
 function handleShowGame() {
+    nav.style.display = "block"
     enterGame.style.display = "block";
     enterButton.style.display = "none";
     enterMessage.style.display = "none";

@@ -155,6 +155,16 @@ nav {
   }
 }
 
+@media screen and (max-width: 800px) {
+  .enter-message {
+    margin: 0 auto;
+  }
+
+  nav {
+    font-size: 1em;
+  }
+}
+
 @media screen and (max-width: 390px) {
   .enter-message {
     font-size: .75em;

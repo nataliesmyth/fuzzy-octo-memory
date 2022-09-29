@@ -86,7 +86,6 @@ function startTimer() {
           console.log('Time is up');
           // Stop Timer
           clearInterval(timer);
-          timer = 30;
           updateTime();
           // Clear squares from DOM
           gameBoard.style.display = "none";

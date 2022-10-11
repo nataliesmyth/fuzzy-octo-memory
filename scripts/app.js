@@ -66,11 +66,13 @@ function handleStartGame() {
 }
 
 function startTimer() {
+    // setInverval returns an interval id
+    // Create variable to save this id (timer countdown)
     const timer = setInterval(function () {
         if (blueSquares === 0 && time > 0 && round <= 3) {
             console.log('You won the round')
             squaresId.style.display = "none";
-
+            // In order to stop the timer, we need to use the clear interval function and pass the interval ID we saved in the timer variable
             clearInterval(timer)
             squaresContainer.innerHTML = '';
             time = 30;
@@ -124,11 +126,10 @@ function createSquares(numberOfSquares) {
     // console.log('Create Squares running');
 
     for (let i = 1; i <= numberOfSquares; i++) {        
-        // create square
+        // create div element for each square
         const square = document.createElement('div');
         // add background color
         square.style.backgroundColor = getRandomColor(); 
-        console.log(square.style.backgroundColor)
         if (square.style.backgroundColor === "blue")
             blueSquares ++
         console.log(blueSquares)
@@ -137,7 +138,7 @@ function createSquares(numberOfSquares) {
         // better solution is to use the class list: prevents overriding other class
         square.classList.add('square');
 
-        // Append to .squares element
+        // Append squares to parent element
         squaresContainer.appendChild(square);
         console.log(square.classList)
         console.log(score)
@@ -145,7 +146,7 @@ function createSquares(numberOfSquares) {
 }
 
 function getRandomColor() {
-    const colors = ["red", "blue", "green", "purple"];
+    const colors = ["#000", "blue", "green", "purple"];
     const randomIndex = Math.floor(Math.random() * colors.length);
     // console.log('randomIndex = ', randomIndex);
 

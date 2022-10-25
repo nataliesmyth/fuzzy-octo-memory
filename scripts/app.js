@@ -166,7 +166,7 @@ function trackRandomColor() {
     }
     console.log('this is the blue square count ', blueSquareCount)
 }
-
+                                                                                                             
 
 function handleSquareClick(event) {
     // event.target is what we click on

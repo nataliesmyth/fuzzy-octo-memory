@@ -1,3 +1,9 @@
+:root {
+  --base: #27A599;
+  --accent: #FF8F3C;
+  --light-gray: #E6E6E6;
+  --dark-gray: #2C423F;
+}
 * {
     box-sizing: border-box;
     padding: 0;
@@ -6,10 +12,10 @@
 
 body {
     font-family: 'Odibee Sans', cursive, sans-serif;
-    background-color: #2ec4b6;
+    background-color: var(--light-gray);
     font-size: 32px;
     -webkit-text-stroke: .25px black;
-    color: #fdfffc;
+    color: var(--light-gray);
 }
 
 button {
@@ -19,7 +25,7 @@ button {
   font-family: 'Odibee Sans', cursive, sans-serif;
   margin: 0.5em;
   font-size: 1.5em;
-  background-color: blue;
+  background-color: var(--accent);
   color: #fdfffc;
   -webkit-text-stroke: 1px #011627;
 }
@@ -52,8 +58,8 @@ main {
 }
 
 nav {
-  background-color: #fdfffc;
-  color: blue;
+  background-color: var(--base);
+  color: var(--dark-gray);
   padding: .25em;
   text-align: center;
   font-size: 1.75em;
@@ -61,7 +67,7 @@ nav {
 }
 
 .blue-blaster {
-  color: blue;
+  color: var(--dark-gray);
 }
 
 .enter-message {
@@ -74,11 +80,19 @@ nav {
   animation-duration: 2s;
 }
 
+.enter-msg-text {
+  background-color: #27a599;
+  position: relative;
+  border: .25em solid #2bb6a8;
+  border-radius: .5em;
+  width: 66.66666666%;
+  left: 16.5%;
+}
+
 .game-title {
   text-align: center;
   font-size: 1em;
 }
-
 
 .close-btn {
   float: right; 
@@ -86,6 +100,7 @@ nav {
   font-size: 24px;  
   font-weight: bold;
 }
+
 .close-btn:hover {
   color: darkgray;
 }

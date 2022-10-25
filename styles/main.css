@@ -1,8 +1,8 @@
 :root {
-  --base: #27A599;
-  --accent: #FF8F3C;
-  --light-gray: #E6E6E6;
-  --dark-gray: #2C423F;
+  --base: #FFA200;
+  --accent: #1771FF;
+  --light-gray: #FFFCF6;
+  --dark-gray: #272622;
 }
 * {
     box-sizing: border-box;
@@ -14,7 +14,7 @@ body {
     font-family: 'Odibee Sans', cursive, sans-serif;
     background-color: var(--light-gray);
     font-size: 32px;
-    -webkit-text-stroke: .25px black;
+    -webkit-text-stroke: .25px var(--dark-gray);
     color: var(--light-gray);
 }
 
@@ -26,8 +26,8 @@ button {
   margin: 0.5em;
   font-size: 1.5em;
   background-color: var(--accent);
-  color: #fdfffc;
-  -webkit-text-stroke: 1px #011627;
+  color: var(--light-gray);
+  -webkit-text-stroke: 1px var(--dark-gray);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
 header {
     width: 100%;
     display: block;
-    background-color: pink;
+    background-color: var(--light-gray);
     padding: 1% 2% 2%;
     margin-bottom: 1%;
 }
@@ -59,15 +59,27 @@ main {
 
 nav {
   background-color: var(--base);
-  color: var(--dark-gray);
-  padding: .25em;
+  color: var(--light-gray);
+  box-shadow: 0.25rem 0.25rem #ccc, -0.5rem -0.5rem #ccc;
+  padding: .5em 1em;
   text-align: center;
-  font-size: 1.75em;
-  border-bottom: #011627 1px solid;
+  font-size: 1em;
+  /* border-bottom: var(--light-gray) 1px solid; */
+}
+.nav-text {
+  background-color: var(--accent);
+  padding: .25em;
+  border-radius: 5%;
+  box-shadow: 0.15rem 0.15rem black, -0.15rem -0.15rem #ccc;
+
 }
 
 .blue-blaster {
-  color: var(--dark-gray);
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-size: 1em;
+  
 }
 
 .enter-message {
@@ -81,12 +93,13 @@ nav {
 }
 
 .enter-msg-text {
-  background-color: #27a599;
+  background-color: var(--base);
   position: relative;
-  border: .25em solid #2bb6a8;
+  /* border: .05em solid var(--light-gray); */
   border-radius: .5em;
   width: 66.66666666%;
   left: 16.5%;
+  box-shadow: 0.5rem 0.5rem var(--dark-gray), -0.5rem -0.5rem #ccc;
 }
 
 .game-title {
@@ -96,13 +109,13 @@ nav {
 
 .close-btn {
   float: right; 
-  color: #fdfffc; 
+  color: var(--light-gray); 
   font-size: 24px;  
   font-weight: bold;
 }
 
 .close-btn:hover {
-  color: darkgray;
+  color: var(--dark-gray);
 }
 
 .squares {
@@ -110,9 +123,9 @@ nav {
   margin: 0 10em;
   position: absolute;
   text-align: center;
-  background-color: #fdfffc;
+  background-color: rgb(96, 150, 186 / 0.4);
   padding: .5%;
-  border: .15em #011627 solid;
+  border: .15em var(--dark-gray) solid;
   border-radius: 5%;
 }
 
@@ -122,8 +135,8 @@ nav {
     height: 1.75em;
     width: 1.75em;
     box-shadow: 0.05em 0.05em 0px 0px grey;
-    border: .05em #011627 solid;
-    background-color: rgb(96, 150, 186);
+    border: .05em var(--dark-gray) solid;
+    background-color: rgb(96, 150, 186 / 0.4);
     border-radius: 50%;
 }
 
@@ -189,7 +202,7 @@ nav {
   .squares div {
     width: .75em;
     height: .75em;
-    border: .1em #011627 solid;
+    border: .1em var(--dark-gray) solid;
     padding: 0;
   }
 

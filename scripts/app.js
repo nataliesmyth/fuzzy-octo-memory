@@ -130,7 +130,7 @@ function createSquares(numberOfSquares) {
         const square = document.createElement('div');
         // add background color
         square.style.backgroundColor = getRandomColor(); 
-        if (square.style.backgroundColor === "blue")
+        if (square.style.backgroundColor === 'blue')
             blueSquares ++
         console.log(blueSquares)
         // Add class to the new div (destructive)
@@ -145,12 +145,13 @@ function createSquares(numberOfSquares) {
     }
 }
 
+let randomColor;
 function getRandomColor() {
-    const colors = ["#000", "blue", "green", "purple"];
+    const colors = ["#CC2936", "blue", "#e3b505", "#FF3CC7"];
     const randomIndex = Math.floor(Math.random() * colors.length);
     // console.log('randomIndex = ', randomIndex);
 
-    const randomColor = colors[randomIndex];
+    randomColor = colors[randomIndex];
     
     // console.log(randomColor)
     return randomColor;
@@ -166,7 +167,7 @@ function trackRandomColor() {
     }
     console.log('this is the blue square count ', blueSquareCount)
 }
-                                                                                                             
+
 
 function handleSquareClick(event) {
     // event.target is what we click on
@@ -202,14 +203,14 @@ function updateRound() {
 } 
 
 function checkScore(color) {
-    if (color === "blue") { 
+    if (color === 'blue') { 
         score++;
         blueSquares--;
         console.log(blueSquares);
         console.log(`you scored! score = ${score}`);
         // Update the UI
         updateScoreBoard();
-    } else if ((color != "blue") && (score >= 0)) {
+    } else if ((color != 'blue') && (score >= 0)) {
         score--;
         console.log(`you lost a point! score = ${score}`);
         updateScoreBoard();

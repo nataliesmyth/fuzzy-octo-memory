@@ -2,7 +2,7 @@
 
 // -------------------- App State
 
-let time = 30;
+let time = 300000000;
 let score = 0;
 let round = 1;
 let blueSquares = 0

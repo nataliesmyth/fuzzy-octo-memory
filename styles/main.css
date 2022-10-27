@@ -2,7 +2,7 @@
   --base: #FFA200;
   --accent: #1771FF;
   --light-gray: #FFFCF6;
-  --dark-gray: #272622;
+  --dark-gray: #5E6165;
 }
 * {
     box-sizing: border-box;
@@ -27,12 +27,15 @@ button {
   font-size: 1.5em;
   background-color: var(--accent);
   color: var(--light-gray);
-  -webkit-text-stroke: 1px var(--dark-gray);
+  /* -webkit-text-stroke: 1px var(--dark-gray); */
+  box-shadow: 0rem 0rem #ccc, -0.25rem -0.25rem var(--dark-gray);
 }
 
 h1, h2, h3, h4, h5, h6 {
   padding-top: .5em;
   padding-bottom: .5em;
+  color: var(--dark-gray);
+  /* color: #ccc; */
 }
 
 .timers h4 {
@@ -78,7 +81,7 @@ nav {
   color: var(--accent);
   text-transform: uppercase;
   letter-spacing: .1em;
-  font-size: 1em;
+  font-size: 1.25em;
   
 }
 

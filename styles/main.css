@@ -4,6 +4,7 @@
   --light-gray: #FFFCF6;
   --dark-gray: #5E6165;
 }
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -80,8 +81,8 @@ nav {
 .blue-blaster {
   color: var(--accent);
   text-transform: uppercase;
-  letter-spacing: .1em;
-  font-size: 1.25em;
+  letter-spacing: .05em;
+  font-size: 1em;
   
 }
 
@@ -215,6 +216,12 @@ nav {
     top: 0;
     left: 6%;
     padding: 0;
+  }
+}
+
+@media screen and (max-width: 380) {
+  .blue-blaster {
+    font-size: .75em;
   }
 }
 

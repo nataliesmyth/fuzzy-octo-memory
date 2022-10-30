@@ -6,17 +6,17 @@
 }
 
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    font-family: 'Odibee Sans', cursive, sans-serif;
-    background-color: var(--light-gray);
-    font-size: 32px;
-    -webkit-text-stroke: .25px var(--dark-gray);
-    color: var(--light-gray);
+  font-family: 'Odibee Sans', cursive, sans-serif;
+  background-color: var(--light-gray);
+  font-size: 32px;
+  -webkit-text-stroke: .25px var(--dark-gray);
+  color: var(--light-gray);
 }
 
 button {

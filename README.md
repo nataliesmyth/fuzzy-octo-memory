@@ -11,10 +11,6 @@ Find and eliminate all the blue squares before time runs out! Can you beat all t
 * [Technologies](#technologies)
 * [Setup](#setup)
 
-## Screenshots
-
-![screenshot](./img/screenshot.png)
-
 ## User Stories
 
 -When user clicks begin, timer starts and squares populate with either a red, blue, green, or purple square
@@ -26,11 +22,11 @@ Find and eliminate all the blue squares before time runs out! Can you beat all t
 ## General Info
 
 1. When user clicks begin, timer starts and random colored squares populate the screen
--What colors? Red, blue, green, purple
--how many squares? round 1: 25 squares, double the squares each round
--what are squares? colored boxes on the screen
--where should they populate? inside the square section
--what should the timer start at? 30s
+1. Squares will be red, blue, green, or purple
+1. Round 1 = 64 squares
+1. Round 2 = 96 squares
+1. Round 3 = 128 squares
+1. For each round, timer = 30 seconds
 
 1. When user clicks on a square, it disappears and score will go up if the square is blue or down if the square is any other color
 
@@ -48,8 +44,9 @@ Find and eliminate all the blue squares before time runs out! Can you beat all t
 
 This project is created with:
 
-* Ipsum version: 2.33
-* Ament library version: 999
+* Javascript
+* CSS
+* HTML
 
 ## Project Status
 
@@ -63,6 +60,7 @@ Room for improvement:
 * Design and UX need work, how the game works isn't intuitive and there's too little direction
 
 To do:
+
 
 * Remove tiny square between rounds
 * Refresh entire game after the third round
@@ -83,7 +81,7 @@ Created by [Natalie Smyth](https://www.nataliesmyth.com/) - feel free to contact
 <!-- ## License -->
 <!-- This project is open source and available under the [... License](). -->
 
-## Setup
+## Setups
 
 To run this project, install it locally using npm:
 
@@ -93,24 +91,3 @@ cd ../lorem
 npm install
 npm start
 ```
-
-// CODE ORGANIZATION
-
-// Third Party Libraries: moment, underscore, jquery
-// Constants
-// App State
-// Cached DOM Elements
-// Event Listeners
-// Functions
-// steps to start game
-    // select button
-    // save button in variable
-    // add click event listener to button
-
-// PSEUDOCODE: CREATE SQUARES FUNCTION
-// How many squares?
-// Create div element for each square
-// Colors array for color options
-// Random index to get random color
-// Apply random color to the div as background-color
-// Append the square to parent '.squares' element

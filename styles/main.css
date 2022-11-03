@@ -1,93 +1,176 @@
+:root {
+  --base: #FFA200;
+  --accent: #1771FF;
+  --light-gray: #FFFCF6;
+  --dark-gray: #5E6165;
+}
+
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    font-family: 'Odibee Sans', cursive, sans-serif;
-    background-color: #f1fcf8;
-    display: flex;
-    font-size: 32px;
+  font-family: 'Odibee Sans', cursive, sans-serif;
+  background-color: var(--light-gray);
+  font-size: 32px;
+  -webkit-text-stroke: .25px var(--dark-gray);
+  color: var(--light-gray);
 }
 
 button {
-  padding: 0.5em;
+  text-transform: uppercase;
+  padding: 0.25em;
   border-radius: 0.25em;
   font-family: 'Odibee Sans', cursive, sans-serif;
   margin: 0.5em;
-  font-size: 1em;
+  font-size: 1.5em;
+  background-color: var(--accent);
+  color: var(--light-gray);
+  -webkit-text-stroke: 1px var(--dark-gray);
+  box-shadow: 0rem 0rem #ccc, -0.25rem -0.25rem var(--dark-gray);
 }
 
-h1, h3, h6 {
+h1, h2, h3, h4, h5, h6 {
   padding-top: .5em;
   padding-bottom: .5em;
+  color: var(--light-gray);
+  /* color: #ccc; */
+}
+
+.timers h4 {
+  color: var(--dark-gray);
+  padding: 0 0 0 0;
 }
 
 header {
     width: 100%;
     display: block;
-    background-color: pink;
+    background-color: var(--light-gray);
     padding: 1% 2% 2%;
     margin-bottom: 1%;
 }
 
 main {
-  margin: 0 auto;
+  /* margin: 1em; */
+  position: relative;
+  opacity: 1;
+  animation-name: fadeInWelcomeContainer;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
 }
+
+nav {
+  background-color: var(--base);
+  color: var(--light-gray);
+  box-shadow: 0.25rem 0.25rem #ccc, -0.5rem -0.5rem #ccc;
+  padding: .5em 1em;
+  text-align: center;
+  font-size: 1em;
+  /* border-bottom: var(--light-gray) 1px solid; */
+}
+.nav-text {
+  background-color: var(--accent);
+  padding: .25em;
+  border-radius: 5%;
+  box-shadow: 0.15rem 0.15rem black, -0.15rem -0.15rem #ccc;
+
+}
+
+.blue-blaster {
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  font-size: 1em;
   
+}
 
 .enter-message {
-  background-color: #fff;
   margin: 2em auto;
   padding: 2em;
   text-align: center;
-  border: 10px #000 solid;
-  border-radius: 1em;
+  animation-name: fadeInWelcomeContainer;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+  color: var(--light-gray);
 }
 
-.game-container {
-  position: absolute;
-  background-color: red;
-  margin: 2em;
+.enter-msg-text {
+  background-color: var(--base);
+  position: relative;
+  /* border: .05em solid var(--light-gray); */
+  border-radius: .5em;
+  width: 66.66666666%;
+  left: 16.5%;
+  box-shadow: 0.5rem 0.5rem var(--dark-gray), -0.5rem -0.5rem #ccc;
 }
 
 .game-title {
   text-align: center;
-}
-
-.squares {
-    text-align: center;
-    /* margin: 5em; */
-    /* height: 100vh; */
-    padding: 1%;
-    
-}
-
-.squares div {
-    margin: 0.75%;
-    /* padding: 1%; */
-    display: inline-block;
-    height: 2em;
-    width: 2em;
-    /* box-shadow: 0.25em 0.25em 0px 0px grey; */
-    border: .15em black solid;
-    background-color: rgb(96, 150, 186);
+  font-size: 1em;
 }
 
 .close-btn {
   float: right; 
-  color: lightgray; 
+  color: var(--light-gray); 
   font-size: 24px;  
   font-weight: bold;
 }
+
 .close-btn:hover {
-  color: darkgray;
+  color: var(--dark-gray);
+}
+
+.squares {
+  font-size: 1.25em;
+  margin: 0 10em;
+  position: absolute;
+  text-align: center;
+  background-color: rgb(96, 150, 186 / 0.4);
+  padding: .5%;
+  border: .15em var(--dark-gray) solid;
+  border-radius: 5%;
+}
+
+.squares div {
+    margin: 0.75%;
+    display: inline-block;
+    height: 1.75em;
+    width: 1.75em;
+    box-shadow: 0.05em 0.05em 0px 0px grey;
+    border: .05em var(--dark-gray) solid;
+    background-color: rgb(96, 150, 186 / 0.4);
+    border-radius: 50%;
+}
+
+.start-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.timers {
+  display: flex;
+  justify-content: center;
+}
+
+.timers h4 {
+  padding: 0 0.25em;
 }
 
 .welcome-container {
-  display: flex;
-  justify-content: center;
+  margin: 1.5em auto;
+}
+
+@keyframes fadeInWelcomeContainer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes animatetop {
@@ -99,19 +182,59 @@ main {
   to {top:0; opacity:1}
 }
 
+@media screen and (max-width: 1500px) {
+  .squares {
+    margin: 0 1em;
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .enter-message {
+    margin: 0 auto;
+  }
+
+  nav {
+    font-size: 1em;
+  }
+}
+
 @media screen and (max-width: 390px) {
   .enter-message {
-    margin: .25em;
-    border: 5px #000 solid;
+    font-size: .75em;
+    width: 20em;
   }
 
   .squares div {
-    width: 1em;
-    height: 1em;
-    border: .1em black solid;
+    width: .75em;
+    height: .75em;
+    border: .1em var(--dark-gray) solid;
+    padding: 0;
   }
 
   .game-container {
     margin: .25em;
+    position: relative;
+    top: 0;
+    left: 6%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 380) {
+  .blue-blaster {
+    font-size: .75em;
+  }
+
+  
+}
+
+@media screen and (max-width: 280px) {
+  .game-container {
+    width: 268px;
+  }
+
+  .squares {
+    margin: 0 .25em 0 .25em;
   }
 }

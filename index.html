@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
+  <html lang="en">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -12,45 +12,37 @@
   <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
   <!-- Main CSS -->
   <link rel="stylesheet" href="styles/main.css">
-  <title>Poke-A-Square</title>
+  <title>Blue Blaster</title>
 </head>
 
 
 <body>
-
-<div class="enter-message" id="enter-message">
-  <h1>Welcome to Poke-A-Square!</h1>
-  <h3>Click all the blue squares before time runs out.</h3>
-  <h6>Can you beat all three levels?</h6>
-  <!-- <form action="" method="get" class="form-name">
-    <label for="name">Enter your name:</label>
-    <input type="text" name="name" id="name" required>
-    <button type="submit" value="Enter Game">
-  </form> -->
-  <button class="enter-btn" id="enter-btn">Enter Game</button>
-</div>
-
-<main id="main">
-  <h1 class="game-title">Poke-A-Square!</h1>
-    <div class="welcome-container">
-      <section class="timers">
-        <h4>Score: 0</h4>
-        <h4 id="timer">timer: 30s</h4>
-        <h4 id="round">round: 1</h4>
-      </section>
-      <section class="start-btn">
-        <button id="startGame">Begin</button>
-
-      </section>
+  <nav id="nav"><span class="nav-text">Blue Blaster</span></nav>
+  <div class="enter-message" id="enter-message">
+    <div class="enter-msg-text">
+      <h1>Welcome to <span class="blue-blaster">Blue Blaster</span></h1>
+      <h2>Click all the blue circles before time runs out</h2>
+      <h4>Can you beat all three levels?</h4>
+      
+      <button class="enter-btn" id="enter-btn">Enter Game</button>
     </div>
-
-    <div class="game-container" id="game-board">
-      <section class="squares"></section>
-    </div>
-    
-</main>
-
-
+  </div>
+  
+  <main id="main">
+      <div class="welcome-container">
+        <section class="timers">
+          <h4 id="score">Score: 0</h4>
+          <h4 id="timer">Timer: 30s</h4>
+          <h4 id="round">Round: 1</h4>
+        </section>
+        <div class="start-btn">
+          <button id="startGame">Begin</button>
+        </div>
+      </div>
+      <div class="game-container" id="game-board">
+      <div class="squares" id="squares-div"></div>
+      </div>
+  </main>
 
 </body>
 </html>

@@ -28,18 +28,19 @@ button {
   font-size: 1.5em;
   background-color: var(--accent);
   color: var(--light-gray);
-  /* -webkit-text-stroke: 1px var(--dark-gray); */
+  -webkit-text-stroke: 1px var(--dark-gray);
   box-shadow: 0rem 0rem #ccc, -0.25rem -0.25rem var(--dark-gray);
 }
 
 h1, h2, h3, h4, h5, h6 {
   padding-top: .5em;
   padding-bottom: .5em;
-  color: var(--dark-gray);
+  color: var(--light-gray);
   /* color: #ccc; */
 }
 
 .timers h4 {
+  color: var(--dark-gray);
   padding: 0 0 0 0;
 }
 
@@ -94,6 +95,7 @@ nav {
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
   animation-duration: 2s;
+  color: var(--light-gray);
 }
 
 .enter-msg-text {
@@ -200,7 +202,7 @@ nav {
 @media screen and (max-width: 390px) {
   .enter-message {
     font-size: .75em;
-    margin: .25em;
+    width: 20em;
   }
 
   .squares div {
@@ -223,6 +225,8 @@ nav {
   .blue-blaster {
     font-size: .75em;
   }
+
+  
 }
 
 @media screen and (max-width: 280px) {

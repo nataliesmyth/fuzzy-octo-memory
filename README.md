@@ -5,7 +5,6 @@ Find and eliminate all the blue squares before time runs out! Can you beat all t
 
 ## Table of Contents
 
-* [Screenshots](#screenshots)
 * [User Stories](#user-stories)
 * [General info](#general-info)
 * [Technologies](#technologies)

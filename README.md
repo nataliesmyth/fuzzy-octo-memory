@@ -5,19 +5,18 @@ Find and eliminate all the blue squares before time runs out! Can you beat all t
 
 ## Table of Contents
 
-* [Screenshots](#screenshots)
-* [User Stories](#User-Stories)
+* [User Stories](#user-stories)
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Setup](#setup)
 
 ## User Stories
 
--When user clicks begin, timer starts and squares populate with either a red, blue, green, or purple square
--When user click a color, the square disappears
--If the square is blue, the user gains 1 point, if the square is red, green, or purple, 1 point is subtracted from the score
--When round is over, the scores, round, and timer update for the user to start again
--Each round is 30 seconds, first round has 64 squares, second round has 96, and the third round has 128 squares
+* When user clicks begin, timer starts and squares populate with either a red, blue, green, or purple square
+* When user click a color, the square disappears
+* If the square is blue, the user gains 1 point, if the square is red, green, or purple, 1 point is subtracted from the score
+* When round is over, the scores, round, and timer update for the user to start again
+* Each round is 30 seconds, first round has 64 squares, second round has 96, and the third round has 128 squares
 
 ## General Info
 
@@ -61,7 +60,6 @@ Room for improvement:
 
 To do:
 
-
 * Remove tiny square between rounds
 * Refresh entire game after the third round
 
@@ -81,7 +79,7 @@ Created by [Natalie Smyth](https://www.nataliesmyth.com/) - feel free to contact
 <!-- ## License -->
 <!-- This project is open source and available under the [... License](). -->
 
-## Setups
+## Setup
 
 To run this project, install it locally using npm:
 
